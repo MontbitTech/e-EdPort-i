@@ -13,11 +13,49 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Admin Class
-Route::get('admin/listclass', 'Admin\ClassController@listClass')->name('admin.listclass');
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+|
+| All routes specific to admin user goes here
+|
+*/
+// Dashboard
+Route::get('admin/dashboard', 'Admin\DashboardController@listClass')->name('admin.dashboard');
+// Classroom
+// Teacher
+// Timetable
+// Student
+// Content
+// Support
+// Setting
 
-//Admin Content
-Route::get('admin/listcontent', 'Admin\ContentController@listContent')->name('admin.listcontent');
 
-//Student Index
-Route::get('student/liststudent', 'Student\IndexController@listStudent')->name('admin.liststudent');
+/*
+|--------------------------------------------------------------------------
+| Teacher Routes
+|--------------------------------------------------------------------------
+|
+| All routes specific to teacher user goes here
+|
+*/
+// Dashboard
+// Lecture
+// Examination
+// Setting
+
+
+/*
+|--------------------------------------------------------------------------
+| Student Routes
+|--------------------------------------------------------------------------
+|
+| All routes specific to student user goes here
+|
+*/
+// Dashboard
+Route::get('student/dashboard', 'Student\DashboardController@listStudent')->name('student.dashboard');
+// Lecture
+// Examination
+// Profile
