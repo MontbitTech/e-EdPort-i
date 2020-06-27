@@ -4,143 +4,321 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Main content -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Welcome [Student Name]</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="{{route('student.dashboard')}}">Student</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
   <section class="content">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
+
+      <div class="row  ">
+        <div class="col-md-6">
+
           <!-- small box -->
           <div class="small-box bg-info ">
             <div class="inner">
-              <h4>[Subject]</h4>
+              <h4>Class 12th</h4>
 
-              <p>[Teacher]</p>
-              <p>9:00AM To 10:00 AM</p>
+              <p>English</p>
+              <p>9:00Am To 10:00 Am</p>
             </div>
             <div class="icon">
               <i class="fas fa-book-reader"></i>
             </div>
-            <a href="#" class="small-box-footer">Join Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
-
+            <a href="#" class="small-box-footer">Start Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
           </div>
-        </div>
 
-
-        <div class="col-md-8">
           <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Today's Upcoming Lectures</h3>
+            <div class="card-header border-transparent">
+              <h3 class="card-title">Today All Class</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
                 </button>
+
               </div>
             </div>
+            <!-- /.card-header -->
             <div class="card-body p-0">
-              <ul class="products-list product-list-in-card pl-2 pr-2">
-                <li class="item">
-                  <div class="product-img">
-                    <i class="fas fa-book-reader fa-3x text-info"></i>
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title text-info">[Subject]</a>
-                    <span class="product-description text-secondary text-sm">
-                      By [Teacher] <br />From [9:00 AM] To [10:00 AM]
-                    </span>
-                  </div>
-                </li>
-              </ul>
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                    <tr>
+                      <th>Class</th>
+                      <th>Subejct</th>
+                      <th>Time</th>
+                      <th>Join</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 10-A</td>
+                      <td>English</td>
+                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
             </div>
+            <!-- /.card-body -->
+            <!-- <div class="card-footer clearfix">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
+                        </div> -->
+            <!-- /.card-footer -->
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="row">
+
+
+            <div class="col-lg-6 col-6">
+              <div class="small-box bg-info ">
+                <div class="inner">
+                  <h4>50</h4>
+
+                  <p> My Student Count</p>
+
+                </div>
+                <div class="icon">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-6 col-6 ">
+              <div class="small-box bg-info ">
+                <div class="inner">
+                  <h4>5</h4>
+
+                  <p> My Subject Count</p>
+
+                </div>
+                <div class="icon">
+                  <i class="fas fa-book"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-6 ">
+              <div class="small-box bg-info ">
+                <div class="inner">
+                  <h4>5</h4>
+
+                  <p> My Lecture Count</p>
+
+                </div>
+                <div class="icon">
+                  <i class="fas fa-book-reader"></i>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-6 col-6">
+              <div class="small-box bg-info ">
+                <div class="inner">
+                  <h4>5</h4>
+
+                  <p> My Lecture Count</p>
+
+                </div>
+                <div class="icon">
+                  <i class="fas fa-book-reader"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card card-info">
+            <div class="card-header border-transparent">
+              <h3 class="card-title">Holiday List</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive mt-1 p-2">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Occasion</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.card-body -->
+
+            <!-- /.card-footer -->
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="row">
-        <!-- Attendance Percentage -->
-        <div class="col-md-3">
-          <div class="info-box bg-info">
-            <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">My Attendance</span>
-              <span class="info-box-number">75%</span>
-
-              <div class="progress">
-                <div class="progress-bar" style="width: 75%"></div>
-              </div>
-              <span class="progress-description">
-                If LT 60 then low else ok
-              </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-        </div>
-        <!-- Attendance Percentage -->
-
-        <!-- Attendance Percentage -->
-        <div class="col-md-3">
-          <div class="info-box bg-info">
-            <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Direct Messages</span>
-              <span class="info-box-number">163,921</span>
-
-              <div class="progress">
-                <div class="progress-bar" style="width: 40%"></div>
-              </div>
-              <span class="progress-description">
-                40% Increase in 30 Days
-              </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-        </div>
-        <!-- Attendance Percentage -->
-
-        <!-- Attendance Percentage -->
-        <div class="col-md-3">
-          <div class="info-box bg-info">
-            <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Direct Messages</span>
-              <span class="info-box-number">163,921</span>
-
-              <div class="progress">
-                <div class="progress-bar" style="width: 40%"></div>
-              </div>
-              <span class="progress-description">
-                40% Increase in 30 Days
-              </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-        </div>
-        <!-- Attendance Percentage -->
-
-        <!-- Attendance Percentage -->
-        <div class="col-md-3">
-          <div class="info-box bg-info">
-            <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Direct Messages</span>
-              <span class="info-box-number">163,921</span>
-
-              <div class="progress">
-                <div class="progress-bar" style="width: 40%"></div>
-              </div>
-              <span class="progress-description">
-                40% Increase in 30 Days
-              </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-        </div>
-        <!-- Attendance Percentage -->
-
-      </div>
     </div>
   </section>
 </div>

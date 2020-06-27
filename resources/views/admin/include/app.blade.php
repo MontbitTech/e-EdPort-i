@@ -135,7 +135,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{route('admin.classroom')}}" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard"></i>
                                 <p>
                                     Classroom
@@ -231,7 +231,7 @@
             $("#example1").DataTable({
                 "responsive": true,
                 "autoWidth": false,
-                "ordering": false,
+                "ordering": true,
             });
         });
     </script>
