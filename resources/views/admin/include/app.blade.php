@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+<body class="hold-transition sidebar-mini layout-navbar-fixed sidebar-collapse">
     <div class="wrapper">
 
         <!-- Navbar -->

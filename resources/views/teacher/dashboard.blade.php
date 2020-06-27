@@ -3,9 +3,6 @@
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header mb-5">
-    </section>
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
@@ -57,8 +54,60 @@
                         <a href="#" class="small-box-footer">Start Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
                     </div>
 
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card-header">
+                            <h3 class="card-title">Today All Class</h3>
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div> -->
+                    <!-- /.card-header -->
+                    <!-- <div class="card-body p-0">
+                            <ul class="products-list product-list-in-card pl-2 pr-2">
+                                <li class="item">
+                                    <div class="product-img">
+                                        <i class="fas fa-book-reader  to_a_class"></i>
+                                    </div>
+                                    <div class="product-info class_color">
+                                        <a href="javascript:void(0)" class="product-title " style="color:balck  !important">Class 10th
+                                            <span class="badge badge-info  float_time float-right">9:00 Am To 10:00 AM</span></a>
+                                        <span class="product-description">
+                                            English
+                                        </span>
+                                    </div>
+                                </li> -->
+                    <!-- /.item -->
+                    <!-- <li class="item">
+                                    <div class="product-img">
+                                        <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="javascript:void(0)" class="product-title">Bicycle
+                                            <span class="badge badge-info float-right">$700</span></a>
+                                        <span class="product-description">
+                                            26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                                        </span>
+                                    </div>
+                                </li> -->
+                    <!-- /.item -->
+
+                    <!-- </ul>
+                        </div> -->
+                    <!-- /.card-body -->
+                    <!-- <div class="card-footer text-center">
+                            <a href="javascript:void(0)" class="uppercase">View All Products</a>
+                        </div> -->
+                    <!-- /.card-footer -->
+                    <!-- </div> -->
+
+                    <div class="card">
+                        <div class="card-header border-transparent">
                             <h3 class="card-title">Today All Class</h3>
 
                             <div class="card-tools">
@@ -72,39 +121,42 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body p-0">
-                            <ul class="products-list product-list-in-card pl-2 pr-2">
-                                <li class="item">
-                                    <div class="product-img">
-                                        <i class="fas fa-book-reader  to_a_class"></i>
-                                    </div>
-                                    <div class="product-info class_color">
-                                        <a href="javascript:void(0)" class="product-title " style="color:balck  !important">Class 10th
-                                            <span class="badge badge-info  float_time float-right">9:00 Am To 10:00 AM</span></a>
-                                        <span class="product-description">
-                                            English
-                                        </span>
-                                    </div>
-                                </li>
-                                <!-- /.item -->
-                                <!-- <li class="item">
-                                    <div class="product-img">
-                                        <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="javascript:void(0)" class="product-title">Bicycle
-                                            <span class="badge badge-info float-right">$700</span></a>
-                                        <span class="product-description">
-                                            26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                                        </span>
-                                    </div>
-                                </li> -->
-                                <!-- /.item -->
+                            <div class="table-responsive">
+                                <table class="table m-0">
+                                    <thead>
+                                        <tr>
+                                            <!-- <th>icont</th> -->
+                                            <th>Class</th>
+                                            <th>Section</th>
+                                            <th>Subejct</th>
+                                            <th>Time</th>
+                                            <th>Join</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
 
-                            </ul>
+                                            <td> 10</td>
+                                            <td> 10-A</td>
+                                            <td>English</td>
+
+                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td>
+                                                <a href="#">
+                                                    <span><i class="fas fa-arrow-circle-right text-info ml-2"></i></span>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
                         </div>
                         <!-- /.card-body -->
-                        <!-- <div class="card-footer text-center">
-                            <a href="javascript:void(0)" class="uppercase">View All Products</a>
+                        <!-- <div class="card-footer clearfix">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
                         </div> -->
                         <!-- /.card-footer -->
                     </div>
