@@ -109,7 +109,7 @@
             <!-- /.card-header -->
             <div class="card-body p-0" style="height: 235px;overflow: auto;">
               <div class="table-responsive mt-1 p-2">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped table-sm">
                   <thead>
                     <tr>
                       <th>Holiday Name</th>
@@ -167,14 +167,14 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-holiday" style="width:100%;">Add Holiday</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-holiday" style="width:100%;">Add Holiday</a>
             </div>
             <!-- /.card-footer -->
           </div>
           <!-- /.card -->
         </div>
 
-        <div class="modal fade" id="modal-add-holiday">
+        <div class="modal fade" id="modal-add-edit-holiday">
           <div class="modal-dialog modal-md">
             <div class="modal-content">
               <div class="modal-header">
@@ -184,7 +184,6 @@
                 </button>
               </div>
               <div class="modal-body">
-                <!-- form start -->
                 <form role="form" enctype="multipart/form-data" method="post" action="">
                   <div class="card-body">
 
@@ -200,37 +199,42 @@
                       <label for="holiday_to">To</label>
                       <input type="date" id="holiday_to" name="holiday_to" class="form-control" />
                     </div>
-                      <div class="form-group clearfix">
-                        <div class="icheck-success d-inline">
-                          <input type="checkbox" checked="" id="checkboxSuccess1">
+                    <div class="form-group clearfix">
+                      <label for="holiday_from">For</label>
+                      <div class="row">
+                        <div class="col-md-4 icheck-success d-inline">
+                          <input type="checkbox" id="checkboxSuccess1" checked>
                           <label for="checkboxSuccess1">
+                            Admin
                           </label>
                         </div>
-                        <div class="icheck-success d-inline">
-                          <input type="checkbox" id="checkboxSuccess2">
+                        <div class="col-md-4 icheck-success d-inline">
+                          <input type="checkbox" id="checkboxSuccess2" checked>
                           <label for="checkboxSuccess2">
+                            Teacher
                           </label>
                         </div>
-                        <div class="icheck-success d-inline">
-                          <input type="checkbox" disabled="" id="checkboxSuccess3">
+                        <div class="col-md-4 icheck-success d-inline">
+                          <input type="checkbox" id="checkboxSuccess3" checked>
                           <label for="checkboxSuccess3">
-                            Success checkbox
-                          </lab
-                    </div>iv>
-
-
-              </div>
+                            Student
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     <button type="submit" class="btn btn-primary">Save changes</button>
                   </div>
 
                 </form>
-             </div>
+              </div>
 
             </div>
           </div>
         </div>
+
       </div>->
       </tent --pper -->
       <script>

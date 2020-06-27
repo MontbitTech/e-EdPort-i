@@ -28,8 +28,7 @@
                     <!-- small box -->
                     <div class="small-box bg-info ">
                         <div class="inner">
-                            <h4>Class 12th</h4>
-
+                            <h4>Division - 12 | Section - A</h4>
                             <p>English</p>
                             <p>9:00Am To 10:00 Am</p>
                         </div>
@@ -39,9 +38,9 @@
                         <a href="#" class="small-box-footer">Start Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
                     </div>
 
-                    <div class="card">
+                    <div class="card card-info">
                         <div class="card-header border-transparent">
-                            <h3 class="card-title">Today All Class</h3>
+                            <h3 class="card-title">My Today's Lectures</h3>
 
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -56,7 +55,7 @@
                                 <table class="table m-0">
                                     <thead>
                                         <tr>
-                                            <th>Class</th>
+                                            <th>Audiance</th>
                                             <th>Subejct</th>
                                             <th>Time</th>
                                             <th>Join</th>
@@ -167,14 +166,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <!-- /.table-responsive -->
                         </div>
-                        <!-- /.card-body -->
-                        <!-- <div class="card-footer clearfix">
-                            <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
-                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
-                        </div> -->
-                        <!-- /.card-footer -->
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -242,12 +234,19 @@
                     </div>
                     <div class="card card-info">
                         <div class="card-header border-transparent">
-                            <h3 class="card-title">Holiday List</h3>
+                            <h3 class="card-title">Teacher's Holiday List</h3>
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+
+                            </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body p-0">
                             <div class="table-responsive mt-1 p-2">
-                                <table id="example1" class="table table-bordered table-striped">
+                                <table id="example1" class="table table-bordered table-striped table-sm">
                                     <thead>
                                         <tr>
                                             <th>Occasion</th>

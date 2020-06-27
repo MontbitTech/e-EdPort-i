@@ -20,7 +20,11 @@
     </div><!-- /.container-fluid -->
   </div>
   <section class="content">
-    
+    <div class="container">
+      <div class="row">
+        .col-
+      </div>
+    </div>
   </section>
 </div>
 @endsection
