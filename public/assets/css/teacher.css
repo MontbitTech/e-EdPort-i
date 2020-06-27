@@ -1,0 +1,19 @@
+.navbar {
+  position: fixed;
+  width: -webkit-fill-available;
+}
+
+.to_a_class{
+    font-size: 40px;
+    color :#17a2b8;
+}
+.float_time{
+    font-size: 15px;
+}
+.class_color a{
+  color:#7a8897;
+  font-weight: 30px;
+}
+.class_color a:hover{
+  color: black;
+}

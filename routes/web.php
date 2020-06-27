@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Dashboard
-Route::get('admin/dashboard', 'Admin\DashboardController@listClass')->name('admin.dashboard');
+Route::get('admin/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard');
 // Classroom
 // Teacher
 // Timetable
@@ -41,6 +41,7 @@ Route::get('admin/dashboard', 'Admin\DashboardController@listClass')->name('admi
 |
 */
 // Dashboard
+Route::get('teacher/dashboard', "Teacher\DashboardController@index")->name('teacher.dashboard');
 // Lecture
 // Examination
 // Setting
@@ -55,7 +56,8 @@ Route::get('admin/dashboard', 'Admin\DashboardController@listClass')->name('admi
 |
 */
 // Dashboard
-Route::get('student/dashboard', 'Student\DashboardController@listStudent')->name('student.dashboard');
+Route::get('student/dashboard', 'Student\DashboardController@index')->name('student.dashboard');
+//Route::get('student/dashboard', 'Student\DashboardController@index')->name('student.dashboard');
 // Lecture
 // Examination
 // Profile

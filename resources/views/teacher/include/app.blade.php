@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{asset('assets/plugins/select2/css/select2.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('assets/css/adminlte.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/admin.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/teacher.css')}}">
     <!-- jQuery -->
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     <!-- ChartJS -->
@@ -136,49 +136,17 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chalkboard"></i>
+                                <i class="nav-icon fas fa-book-reader"></i>
                                 <p>
-                                    Classroom
+                                    Lecture
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                                <i class="nav-icon fas fa-edit"></i>
                                 <p>
-                                    Teacher
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-calendar-week"></i>
-                                <p>
-                                    Timetable
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-user-graduate"></i>
-                                <p>
-                                    Student
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="nav-icon fas fa-book-open"></i>
-                                <p>
-                                    Content
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-question-circle"></i>
-                                <p>
-                                    Support
+                                    Examination
                                 </p>
                             </a>
                         </li>
