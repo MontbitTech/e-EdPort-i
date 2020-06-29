@@ -87,24 +87,23 @@
       <!-- /.row -->
       <div class="row">
         <div class="col-md-6">
-
-        <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-pie mr-1"></i>
-                  Sales
-                </h3>
-              </div><!-- /.card-header -->
-              <div class="card-body">
-                <div class="tab-content p-0">
-                  <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 300px;">
-                      <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>                         
-                   </div>
+          <!-- TODO: Work on this @Saurabh -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-chart-pie mr-1"></i>
+                Sales
+              </h3>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <div class="tab-content p-0">
+                <!-- Morris chart - Sales -->
+                <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;">
+                  <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
                 </div>
-              </div><!-- /.card-body -->
-            </div>
+              </div>
+            </div><!-- /.card-body -->
+          </div>
         </div>
         <div class="col-md-6">
 
@@ -433,8 +432,8 @@
       maintainAspectRatio: false,
       responsive: true,
     }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
+    //Create pie or doughnut chart
+    // You can switch between pie and doughnut using the method below.
     var donutChart = new Chart(donutChartCanvas, {
       type: 'doughnut',
       data: donutData,
