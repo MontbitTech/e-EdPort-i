@@ -36,7 +36,7 @@
             <div class="icon">
               <i class="fas fa-book-reader"></i>
             </div>
-            <a href="#" class="small-box-footer">Start Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
+            <a href="#" class="small-box-footer">Join Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
           </div>
 
           <div class="card card-info">
@@ -177,13 +177,13 @@
             <div class="col-lg-6 col-6">
               <div class="small-box bg-info ">
                 <div class="inner">
-                  <h4>50</h4>
+                  <h4>10</h4>
 
-                  <p> My Student Count</p>
+                  <p> My Attendance Count</p>
 
                 </div>
                 <div class="icon">
-                  <i class="fas fa-user-graduate"></i>
+                  <i class="fas fa-hand-paper"></i>
                 </div>
 
               </div>
@@ -213,7 +213,7 @@
 
                 </div>
                 <div class="icon">
-                  <i class="fas fa-book-reader"></i>
+                  <i class="fas fa-book-open"></i>
                 </div>
 
               </div>
@@ -322,7 +322,4 @@
     </div>
   </section>
 </div>
-
-
-
 @endsection

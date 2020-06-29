@@ -63,4 +63,5 @@ Route::get('student/dashboard', 'Student\DashboardController@index')->name('stud
 // Lecture
 Route::get('student/lecture', 'Student\LectureController@index')->name('student.lecture');
 // Examination
+Route::get('student/profile', 'Student\ProfileController@index')->name('student.profile');
 // Profile

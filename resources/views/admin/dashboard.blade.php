@@ -27,9 +27,9 @@
           <!-- small box -->
           <div class="small-box bg-secondary">
             <div class="inner">
-              <h3>53</h3>
+              <h3>53/60</h3>
 
-              <p>Teachers</p>
+              <p>Online Teachers</p>
             </div>
             <div class="icon">
               <i class="ion ion-person" style="color:#fff"></i>
@@ -42,9 +42,9 @@
           <!-- small box -->
           <div class="small-box bg-secondary">
             <div class="inner">
-              <h3>150</h3>
+              <h3>150/300</h3>
 
-              <p>Students</p>
+              <p>Online Students</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-stalker" style="color:#fff"></i>
@@ -92,6 +92,11 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Attendance</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
             </div>
             <div class="card-body">
               <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
@@ -105,9 +110,14 @@
           <div class="card card-secondary">
             <div class="card-header border-transparent">
               <h3 class="card-title">Holiday List</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
             </div>
             <!-- /.card-header -->
-            <div class="card-body p-0" style="height: 235px;overflow: auto;">
+            <div class="card-body p-0">
               <div class="table-responsive mt-1 p-2">
                 <table id="example1" class="table table-bordered table-striped table-sm">
                   <thead>
@@ -119,6 +129,166 @@
                   </thead>
                   <tbody>
 
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rakshabandhan</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Diwali</td>
+                      <td>1 Jan 2020</td>
+                      <td>
+                        <div style="margin:-7px;">
+                          <button type="button" class="btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
                     <tr>
                       <td>Rakshabandhan</td>
                       <td>1 Jan 2020</td>
@@ -234,49 +404,53 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.content -->
+</div>
 
-      </div>->
-      </tent --pper -->
-      <script>
-        $(function() {
-          //-------------
-          //- DONUT CHART -
-          //-------------
-          // Get context with jQuery - using jQuery's .get() method.
-          var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
-          var donutData = {
-            labels: [
-              'Present',
-              'Absent',
-            ],
-            datasets: [{
-              data: [700, 500],
-              backgroundColor: ['#00a65a', '#dd4b39'],
-            }]
-          }
-          var donutOptions = {
-            maintainAspectRatio: false,
-            responsive: true,
-          }
-          //Create pie or douhnut chart
-          // You can switch between pie and douhnut using the method below.
-          var donutChart = new Chart(donutChartCanvas, {
-            type: 'doughnut',
-            data: donutData,
-            options: donutOptions
-          })
+<!-- /.content-wrapper -->
+<script>
+  $(function() {
+    //-------------
+    //- DONUT CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+    var donutData = {
+      labels: [
+        'Present',
+        'Absent',
+      ],
+      datasets: [{
+        data: [700, 500],
+        backgroundColor: ['#00a65a', '#dd4b39'],
+      }]
+    }
+    var donutOptions = {
+      maintainAspectRatio: false,
+      responsive: true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    var donutChart = new Chart(donutChartCanvas, {
+      type: 'doughnut',
+      data: donutData,
+      options: donutOptions
+    })
 
 
-        })
-        /*
-         * Custom Label formatter
-         * ----------------------
-         */
-        function labelFormatter(label, series) {
-          return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">' +
-            label +
-            '<br>' +
-            Math.round(series.percent) + '%</div>'
-        }
-      </script>
-      @endsection
+  })
+  /*
+   * Custom Label formatter
+   * ----------------------
+   */
+  function labelFormatter(label, series) {
+    return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">' +
+      label +
+      '<br>' +
+      Math.round(series.percent) + '%</div>'
+  }
+</script>
+@endsection
