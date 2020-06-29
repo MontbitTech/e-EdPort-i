@@ -88,22 +88,23 @@
       <div class="row">
         <div class="col-md-6">
 
-          <!-- DONUT CHART -->
-          <div class="card card-secondary">
-            <div class="card-header">
-              <h3 class="card-title">Attendance</h3>
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-              </div>
+        <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-chart-pie mr-1"></i>
+                  Sales
+                </h3>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="tab-content p-0">
+                  <!-- Morris chart - Sales -->
+                  <div class="chart tab-pane active" id="revenue-chart"
+                       style="position: relative; height: 300px;">
+                      <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>                         
+                   </div>
+                </div>
+              </div><!-- /.card-body -->
             </div>
-            <div class="card-body">
-              <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
         </div>
         <div class="col-md-6">
 

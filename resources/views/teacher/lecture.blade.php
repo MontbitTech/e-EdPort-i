@@ -41,7 +41,7 @@
                   <thead>
                     <tr>
                       <th>Audiance</th>
-                      <th>Subejct</th>
+                      <th>Subdjct</th>
                       <th>Time</th>
                       <th>Join</th>
                     </tr>
