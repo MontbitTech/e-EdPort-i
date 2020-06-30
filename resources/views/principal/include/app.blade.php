@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>e-EdPort :: Student</title>
+    <title>e-EdPort :: Principal</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{asset('assets/plugins/select2/css/select2.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('assets/css/adminlte.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/student.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/principal.css')}}">
     <!-- jQuery -->
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     <!-- ChartJS -->
@@ -43,7 +43,7 @@
 
 </head>
 
-<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed layout-navbar-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed sidebar-collapse">
     <div class="wrapper">
 
         <!-- Navbar -->
@@ -103,7 +103,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="{{route('student.dashboard')}}" class="brand-link">
+            <a href="{{route('principal.dashboard')}}" class="brand-link">
                 <img src="{{asset('assets/img/logo.png')}}" alt="[school_name_logo]" class="brand-image" style="opacity: .9">
                 <span class="brand-text font-weight-light"> &nbsp; e-EdPort</span>
             </a>
@@ -113,10 +113,10 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{asset('assets/img/student.png')}}" class="img-circle elevation-2" alt="User Image">
+                        <img src="{{asset('assets/img/admin.png')}}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">[Student Name]</a>
+                        <a class="d-block">Principal</a>
                     </div>
                 </div>
 
@@ -127,7 +127,7 @@
                with font-awesome or any other icon font library -->
 
                         <li class="nav-item">
-                            <a href="{{route('student.dashboard')}}" class="nav-link">
+                            <a href="{{route('principal.dashboard')}}" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -135,26 +135,58 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('student.lecture')}}" class="nav-link">
-                                <i class="nav-icon fas fa-book-reader"></i>
+                            <a href="" class="nav-link">
+                                <i class="nav-icon fas fa-chalkboard"></i>
                                 <p>
-                                    Lecture
+                                    Classroom
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('student.dashboard')}}" class="nav-link">
-                                <i class="nav-icon fas fa-edit"></i>
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
-                                    Examination
+                                    Teacher
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('student.profile')}}" class="nav-link">
-                                <i class="nav-icon fas fa-user"></i>
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-week"></i>
                                 <p>
-                                    Profile
+                                    Timetable
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="nav-icon fas fa-user-graduate"></i>
+                                <p>
+                                    Student
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="nav-icon fas fa-book-open"></i>
+                                <p>
+                                    Content
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-question-circle"></i>
+                                <p>
+                                    Support
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-cogs"></i>
+                                <p>
+                                    Setting
                                 </p>
                             </a>
                         </li>
@@ -199,7 +231,7 @@
             $("#example1").DataTable({
                 "responsive": true,
                 "autoWidth": false,
-                "ordering": false,
+                "ordering": true,
             });
         });
     </script>

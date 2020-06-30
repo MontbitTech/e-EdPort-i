@@ -8,7 +8,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Welcome [Teacher Name]</h1>
+                    <h1 class="m-0 text-dark">Welcome [Teacher NAMe]</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -30,7 +30,7 @@
                         <div class="inner">
                             <h4>Division - 12 | Section - A</h4>
                             <p>English</p>
-                            <p>9:00Am To 10:00 Am</p>
+                            <p>9:00 AM To 10:00 AM</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-book-reader"></i>
@@ -65,7 +65,11 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td>
+                                                <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -75,7 +79,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -85,7 +92,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -95,7 +105,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -105,7 +118,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -115,7 +131,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -125,7 +144,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -135,7 +157,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -145,7 +170,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -155,7 +183,10 @@
                                         <tr>
                                             <td> 10-A</td>
                                             <td>English</td>
-                                            <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                                            <td> <span class="badge badge-info">
+                                                            9:00 AM
+                                                            </br> 10:00 AM
+                                                </span></td>
                                             <td>
                                                 <a href="#">
                                                     <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -232,7 +263,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-info">
+                    <div class="card card-info collapsed-card">
                         <div class="card-header border-transparent">
                             <h3 class="card-title">Teacher's Holiday List</h3>
 
@@ -246,7 +277,7 @@
                         <!-- /.card-header -->
                         <div class="card-body p-0">
                             <div class="table-responsive mt-1 p-2">
-                                <table id="example1" class="table table-bordered table-striped table-sm">
+                                <table id="exAMple1" class="table table-bordered table-striped table-sm">
                                     <thead>
                                         <tr>
                                             <th>Occasion</th>

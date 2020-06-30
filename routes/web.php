@@ -65,3 +65,16 @@ Route::get('student/lecture', 'Student\LectureController@index')->name('student.
 // Examination
 Route::get('student/profile', 'Student\ProfileController@index')->name('student.profile');
 // Profile
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Principal Routes
+|--------------------------------------------------------------------------
+|
+| All routes specific to student user goes here
+|
+*/
+// Dashboard
+Route::get('principal/dashboard', 'Principal\DashboardController@index')->name('principal.dashboard');

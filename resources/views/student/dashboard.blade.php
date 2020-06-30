@@ -31,7 +31,7 @@
               <h4>[Subject]</h4>
 
               <p>By [Teacher Name]</p>
-              <p>9:00Am To 10:00 Am</p>
+              <p>9:00 AM To 10:00 AM</p>
             </div>
             <div class="icon">
               <i class="fas fa-book-reader"></i>
@@ -66,7 +66,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -76,7 +77,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -86,7 +88,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -96,7 +99,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -106,7 +110,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -116,7 +121,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -126,7 +132,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -136,7 +143,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -146,7 +154,8 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -156,7 +165,34 @@
                     <tr>
                       <td>[Subject Name]</td>
                       <td>[Teacher Name]</td>
-                      <td><span class="badge badge-info">9:00 AM TO 10:00 AM</span></td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
+
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>[Subject Name]</td>
+                      <td>[Teacher Name]</td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
+
+                      </td>
+                      <td>
+                        <a href="#">
+                          <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>[Subject Name]</td>
+                      <td>[Teacher Name]</td>
+                      <td><span class="badge badge-info"> 9:00 AM
+                          </br> 10:00 AM</span></td>
                       <td>
                         <a href="#">
                           <span><i class="fas fa-lg icon-3x fa-arrow-circle-right text-info ml-2"></i></span>
@@ -223,7 +259,7 @@
                 <div class="inner">
                   <h4>5</h4>
 
-                  <p> My Lecture Count</p>
+                  <p> My Lecture Cou collapsed-cardnt</p>
 
                 </div>
                 <div class="icon">
@@ -233,93 +269,104 @@
               </div>
             </div>
           </div>
+
           <div class="card card-info">
-            <div class="card-header border-transparent">
-              <h3 class="card-title">Student's Holiday List</h3>
 
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-
-              </div>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body p-0">
-              <div class="table-responsive mt-1 p-2">
-                <table id="example1" class="table table-bordered table-striped table-sm">
-                  <thead>
-                    <tr>
-                      <th>Occasion</th>
-                      <th>Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Diwali</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Diwali</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Rakshabandhan</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-                    <tr>
-                      <td>Diwali</td>
-                      <td>1 Jan 2020</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.card-body -->
-
-            <!-- /.card-footer -->
+          </div>
+          <div class="icon">
+            <i class="fas fa-book-reader"></i>
           </div>
 
         </div>
-
       </div>
-
     </div>
-  </section>
+    <div class="card card-info">
+      <div class="card-header border-transparent">
+        <h3 class="card-title">Student's Holiday List</h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse">
+            <i class="fas fa-minus"></i>
+          </button>
+
+        </div>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body p-0">
+        <div class="table-responsive mt-1 p-2">
+          <table id="example1" class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th>Occasion</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Diwali</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Diwali</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Rakshabandhan</td>
+                <td>1 Jan 2020</td>
+              </tr>
+              <tr>
+                <td>Diwali</td>
+                <td>1 Jan 2020</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <!-- /.table-responsive -->
+      </div>
+      <!-- /.card-body -->
+
+      <!-- /.card-footer -->
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</section>
 </div>
 @endsection
