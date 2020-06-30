@@ -199,7 +199,7 @@
             $("#example1").DataTable({
                 "responsive": true,
                 "autoWidth": false,
-                "ordering": false,
+                "ordering": true,
             });
         });
     </script>

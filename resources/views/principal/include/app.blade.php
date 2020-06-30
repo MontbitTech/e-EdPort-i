@@ -233,6 +233,12 @@
                 "autoWidth": false,
                 "ordering": true,
             });
+            $("#example2").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+                "ordering": true,
+                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
+            });
         });
     </script>
     @if ( Session::has('flash_message') )

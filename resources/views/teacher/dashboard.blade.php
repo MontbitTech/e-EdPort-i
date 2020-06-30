@@ -8,7 +8,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Welcome [Teacher NAMe]</h1>
+                    <h1 class="m-0 text-dark">Welcome [Teacher Name]</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -55,8 +55,8 @@
                                 <table class="table m-0">
                                     <thead>
                                         <tr>
-                                            <th>Audiance</th>
-                                            <th>Subejct</th>
+                                            <th>Audience</th>
+                                            <th>Subject</th>
                                             <th>Time</th>
                                             <th>Join</th>
                                         </tr>
@@ -269,7 +269,7 @@
 
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                    <i class="fas fa-minus"></i>
+                                    <i class="fas fa-plus"></i>
                                 </button>
 
                             </div>
@@ -277,7 +277,7 @@
                         <!-- /.card-header -->
                         <div class="card-body p-0">
                             <div class="table-responsive mt-1 p-2">
-                                <table id="exAMple1" class="table table-bordered table-striped table-sm">
+                                <table id="example1" class="table table-bordered table-striped table-sm">
                                     <thead>
                                         <tr>
                                             <th>Occasion</th>
