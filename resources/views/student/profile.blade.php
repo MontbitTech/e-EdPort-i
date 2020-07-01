@@ -1,10 +1,12 @@
 @extends('student.include.app')
 @section('content')
 
+<!-- Wrapper-->
 <div class="wrapper">
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">
@@ -19,17 +21,17 @@
                         </ol>
                     </div>
                 </div>
-            </div><!-- /.container-fluid -->
+            </div>
         </section>
+        <!-- /.content-header--->
 
-        <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
+
                 <div class="row">
                     <div class="col-md-4">
 
-                        <!-- Profile Image -->
-
+                        <!-- Profile-student -->
                         <div class="card card-info card-outline">
                             <div class="card-body box-profile">
                                 <div class="text-center">
@@ -65,17 +67,14 @@
 
                                 <button type="submit" class="btn btn-info btn-block"><b>Update</b></button>
                             </div>
-                            <!-- /.card-body -->
                         </div>
-                        <!-- /.card -->
+                        <!--./ Profile- student -->
 
-                        <!-- About Me Box -->
-
+                        <!-- Profile-About me -->
                         <div class="card card-info">
                             <div class="card-header">
                                 <h3 class="card-title">About Me</h3>
                             </div>
-                            <!-- /.card-header -->
                             <div class="card-body">
                                 <strong><i class="fas fa-book mr-1"></i> School</strong>
 
@@ -88,28 +87,15 @@
                                 <strong><i class="fas fa-map-marker-alt mr-1"></i>Address</strong>
 
                                 <p class="text-muted">Malibu, California</p>
-
-                                <!-- <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-
-                                <p class="text-muted">
-                                    <span class="tag tag-danger">UI Design</span>
-                                    <span class="tag tag-success">Coding</span>
-                                    <span class="tag tag-info">Javascript</span>
-                                    <span class="tag tag-warning">PHP</span>
-                                    <span class="tag tag-primary">Node.js</span>
-                                </p> -->
-
-                                <!-- <strong><i class="far fa-file-alt mr-1"></i>Personal Details</strong>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p> -->
                             </div>
-                            <!-- /.card-body -->
                         </div>
+                        <!-- /.Profile-About me -->
 
-                        <!-- /.card -->
                     </div>
-                    <!-- /.col -->
 
                     <div class="col-md-8">
+
+                        <!-- Profile-Performance card -->
                         <div class="card card-info collapsed-card">
                             <div class="card-header border-transparent">
                                 <h3 class="card-title">Performance Card</h3>
@@ -120,22 +106,26 @@
 
                                 </div>
                             </div>
-
-                            <div class="card-body pt-2">
-                                <div class="card card-info collapsed-card">
-                                    <div class="card-header border-transparent">
-                                        <h3 class="card-title">English</h3>
-                                        <div class="card-tools">
-                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-
-                                        </div>
-                                    </div>
-                                    <!-- /.card-header -->
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive mt-1 p-2">
-                                            <table id="example1" class="table table-bordered table-striped table-sm">
+                            
+                            <div class="card-body pt-2 pb-0">
+                                <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
+                                 <li class="nav-item">
+                                 <a class="nav-link active" id="custom-content-below-eng-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">English</a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a class="nav-link active" id="custom-content-below-science-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Math</a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a class="nav-link active" id="custom-content-below-maths-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Science</a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a class="nav-link active" id="custom-content-below-hindi-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Hindi</a>
+                                 </li>
+                                </ul>
+                                <div class="tab-content" id="custom-content-below-tabContent">
+                                <div class="tab-pane fade show active" id="custom-content-below-eng" role="tabpanel" aria-labelledby="custom-content-below-eng-tab">
+                                <div class="table-responsive mt-1 p-2">
+                                <table id="example1" class="table table-bordered table-striped table-sm">
                                                 <thead>
                                                     <tr>
                                                         <th>Exam Name</th>
@@ -152,134 +142,65 @@
                                                     </tr>
 
                                                 </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body p-0">
-                                <div class="card card-info collapsed-card">
-                                    <div class="card-header border-transparent">
-                                        <h3 class="card-title">Science</h3>
-                                        <div class="card-tools">
-                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
+                                              </table> 
+                                           </div>
 
-                                        </div>
-                                    </div>
-                                    <!-- /.card-header -->
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive mt-1 p-2">
-                                            <table id="example2" class="table table-bordered table-striped table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Exam Name</th>
-                                                        <th>Marks</th>
-                                                        <th>Percentage</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>[Exam Name]</td>
-                                                        <td>[Marks]</td>
-                                                        <td><span class="badge badge-info"> 90%
-                                                            </span></td>
-                                                    </tr>
+                                          </div>
 
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                            </div> 
+                                            </div>
+                        </div>
+                        <!-- /.Profile-Performance card -->
+
+                        <!-- Profile-Attendance -->
+                        <div class="card card-info collapsed-card">
+                            <div class="card-header border-transparent">
+                                <h3 class="card-title">View Attendance</h3>
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
                                 </div>
                             </div>
 
                             <div class="card-body p-0">
-                                <div class="card card-info collapsed-card">
-                                    <div class="card-header border-transparent">
-                                        <h3 class="card-title">Hindi</h3>
-                                        <div class="card-tools">
-                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
+                                <div class="table-responsive mt-1 p-2">
+                                    <table id="example5" class="table table-bordered table-striped table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
 
-                                        </div>
-                                    </div>
-                                    <!-- /.card-header -->
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive mt-1 p-2">
-                                            <table id="example3" class="table table-bordered table-striped table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Exam Name</th>
-                                                        <th>Marks</th>
-                                                        <th>Percentage</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>[Exam Name]</td>
-                                                        <td>[Marks]</td>
-                                                        <td><span class="badge badge-info"> 90%
-                                                            </span></td>
-                                                    </tr>
+                                            <tr>
+                                                <td>1 July 2020</td>
+                                                <td>Present</td>
+                                            </tr>
 
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                        </tbody>
+                                    </table>
                                 </div>
-                            </div>
-
-                            <div class="card-body p-0">
-                                <div class="card card-info collapsed-card">
-                                    <div class="card-header border-transparent">
-                                        <h3 class="card-title">Maths</h3>
-                                        <div class="card-tools">
-                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-
-                                        </div>
-                                    </div>
-                                    <!-- /.card-header -->
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive mt-1 p-2">
-                                            <table id="example4" class="table table-bordered table-striped table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Exam Name</th>
-                                                        <th>Marks</th>
-                                                        <th>Percentage</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>[Exam Name]</td>
-                                                        <td>[Marks]</td>
-                                                        <td><span class="badge badge-info"> 90%
-                                                            </span></td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- /.table-responsive -->
                             </div>
                         </div>
-                        <!-- /.col -->
+                        <!-- /.Profile-Attendance -->
+
                     </div>
-                    <!-- /.row -->
-                </div><!-- /.container-fluid -->
+
+                </div>
+                <!-- /.container-fluid -->
+                
         </section>
-        <!-- /.content -->
     </div>
+
     <!-- /.content-wrapper -->
 </div>
 
 <script>
-    $(function() {
+
+$(function() {
         $("#example2").DataTable({
             "responsive": true,
             "autoWidth": false,
@@ -297,6 +218,14 @@
 
     $(function() {
         $("#example4").DataTable({
+            "responsive": true,
+            "autoWidth": false,
+            "ordering": true,
+        });
+    });
+
+    $(function() {
+        $("#example5").DataTable({
             "responsive": true,
             "autoWidth": false,
             "ordering": true,

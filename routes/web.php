@@ -26,6 +26,7 @@ Route::get('admin/dashboard', 'Admin\DashboardController@index')->name('admin.da
 // Classroom
 Route::get('admin/classroom', 'Admin\ClassroomController@index')->name('admin.classroom');
 // Teacher
+Route::get('admin/teacher', 'Admin\TeacherController@index')->name('admin.teacher');
 // Timetable
 // Student
 // Content
@@ -47,6 +48,8 @@ Route::get('teacher/dashboard', "Teacher\DashboardController@index")->name('teac
 Route::get('teacher/lecture', 'Teacher\LectureController@index')->name('teacher.lecture');
 
 // Examination
+Route::get('teacher/examination', 'Teacher\ExaminationController@index')->name('teacher.examination');
+
 // Setting
 
 

@@ -1,30 +1,34 @@
 @extends('admin.include.app')
 @section('content')
-<!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper -->
 <div class="content-wrapper">
+
+  <!-- Dashboard-WelcomeContent -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
           <h1 class="m-0 text-dark">Welcome [School Name ]</h1>
-        </div><!-- /.col -->
+        </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Admin</a></li>
             <li class="breadcrumb-item active">Dashboard</li>
           </ol>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- /.content-header -->
-  <!-- Main content -->
+  <!-- /.Dashboard-WelcomeContent -->
+
+  <!-- Section Content -->
   <section class="content">
     <div class="container-fluid">
-      <!-- Small boxes (Stat box) -->
+      <!-- Row1 -->
       <div class="row">
+
+        <!-- Dashboard-OnlineTeacher -->
         <div class="col-lg-3 col-6">
-          <!-- small box -->
           <div class="small-box bg-secondary">
             <div class="inner">
               <h3>53/60</h3>
@@ -36,8 +40,11 @@
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
+          <!-- ./small box -->
         </div>
-        <!-- ./col -->
+        <!-- ./Dashboard-OnlineTeacher -->
+
+        <!-- Dashboard-OnlineStudent-->
         <div class="col-lg-3 col-6">
           <!-- small box -->
           <div class="small-box bg-secondary">
@@ -52,9 +59,10 @@
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <!-- ./col -->
+        <!-- ./Dashboard-OnlineStudent -->
+
+        <!-- Dashboard-PendingFees -->
         <div class="col-lg-3 col-6">
-          <!-- small box -->
           <div class="small-box bg-secondary">
             <div class="inner">
               <h3>44/300</h3>
@@ -67,7 +75,9 @@
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <!-- ./col -->
+        <!-- ./Dashboard-PendingFees -->
+
+        <!-- Dashboard-PendingHelp -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
           <div class="small-box bg-secondary">
@@ -82,12 +92,87 @@
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <!-- ./col -->
+        <!-- ./Dashboard-PendingHelp -->
+
       </div>
-      <!-- /.row -->
+      <!--/Row1-->
+
+      <!--Row2-->
       <div class="row">
+
+        <!-- Dashboard-CPUTraffic -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="info-box">
+            <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">CPU Traffic</span>
+              <span class="info-box-number">
+                10
+                <small>%</small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- ./Dashboard-CPUTraffic -->
+
+        <!-- Dashboard-MemoryUsage -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="info-box mb-3">
+            <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-sd-card"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Memory Usage</span>
+              <span class="info-box-number">
+                10
+                <small>%</small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- /.Dashboard-MemoryUsage -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix hidden-md-up"></div>
+
+        <!-- Dashboard-DiskSpaceUsage -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="info-box mb-3">
+            <span class="info-box-icon bg-success elevation-1"><i class="far fa-database"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">DiskSpace Usage</span>
+              <span class="info-box-number">
+                10
+                <small>%</small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- /.Dashboard-DiskSpaceUsage-->
+
+        <!-- Dashboard-ApacheMysql -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="info-box mb-3">
+            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Apache & Mysql</span>
+              <span class="info-box-number">Running</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.Dashboard-ApacheMysql -->
+
+      </div>
+      <!-- /.Row2 -->
+      <!-- Row3 -->
+      <div class="row">
+
+        <!-- Dashboard-LineChart -->
         <div class="col-md-6">
-          <!-- TODO: Work on this @Saurabh -->
+
+          <!-- Dashboard-TeacherAttendance -->
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title"><i class="fas fa-chart-line mr-1"></i>Teacher's Attendance</h3>
@@ -106,8 +191,9 @@
               </div>
             </div><!-- /.card-body -->
           </div>
+          <!-- ./Dashboard-TeacherAttendance -->
 
-          <!-- TODO: Work on this @Saurabh -->
+          <!-- Dashboard-StudentAttendance -->
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title"><i class="fas fa-chart-line mr-1"></i>Student's Attendance</h3>
@@ -126,8 +212,15 @@
               </div>
             </div><!-- /.card-body -->
           </div>
+          <!-- ./Dashboard-StudentAttendance -->
+
         </div>
+        <!-- ./Dashboard-LineChart -->
+
+        <!-- Dashboard-Table -->
         <div class="col-md-6">
+
+          <!-- Dashboard-NoticeBoard -->
           <div class="card card-secondary">
             <div class="card-header border-transparent">
               <h3 class="card-title">Notice Board</h3>
@@ -293,7 +386,9 @@
             </div>
             <!-- /.card-footer -->
           </div>
-          <!-- /.card -->
+          <!-- ./Dashboard-NoticeBoard -->
+
+          <!-- Dashboard-HolidayList -->
           <div class="card card-secondary collapsed-card">
             <div class="card-header border-transparent">
               <h3 class="card-title">Holiday List</h3>
@@ -368,11 +463,16 @@
             </div>
             <!-- /.card-footer -->
           </div>
-          <!-- /.card -->
+          <!-- ./Dashboard-HolidayList -->
 
         </div>
+        <!-- ./Dashboard-table -->
       </div>
+      <!-- ./Row3 -->
+
       <!--All Modal Open -->
+
+      <!-- Dashboard-HolidayModal -->
       <div class="modal fade" id="modal-add-edit-holiday">
         <div class="modal-dialog modal-md">
           <div class="modal-content">
@@ -439,7 +539,9 @@
           </div>
         </div>
       </div>
+      <!-- ./Dashboard-HolidayModal -->
 
+      <!-- Dashboard-NoticeModal -->
       <div class="modal fade" id="modal-add-edit-notice">
         <div class="modal-dialog modal-md">
           <div class="modal-content">
@@ -498,7 +600,10 @@
           </div>
         </div>
       </div>
+      <!-- ./Dashboard-NoticeModal-->
+
       <!-- All Modal Close-->
+
     </div>
   </section>
   <!-- /.content -->
@@ -508,7 +613,8 @@
 <script>
   $(function() {
     /* Chart.js Charts */
-    // Teacher Attendance chart
+
+    // Dasboard-TeacherAttendanceChart
     var salesChartCanvasT = document.getElementById('revenue-chart-canvas-teacher').getContext('2d');
 
     var salesChartDataT = {
@@ -517,7 +623,8 @@
           label: 'Teacher Present',
           backgroundColor: 'rgba(60,141,188,0.9)',
           borderColor: 'rgba(60,141,188,0.8)',
-          pointRadius: false,
+          pointRadius: 3,
+          pointHitRadius:10,
           pointColor: '#3b8bba',
           pointStrokeColor: 'rgba(60,141,188,1)',
           pointHighlightFill: '#fff',
@@ -528,7 +635,8 @@
           label: 'Total Teacher',
           backgroundColor: 'rgba(210, 214, 222, 1)',
           borderColor: 'rgba(210, 214, 222, 1)',
-          pointRadius: false,
+          pointRadius: 3,
+          pointHitRadius:10,
           pointColor: 'rgba(210, 214, 222, 1)',
           pointStrokeColor: '#c1c7d1',
           pointHighlightFill: '#fff',
@@ -564,7 +672,9 @@
       data: salesChartDataT,
       options: salesChartOptionsT
     })
-    // Student Attendance chart
+    // Dasboard-TeacherAttendanceChartClose
+
+    // Dashboard-StudentAttendanceChart
     var salesChartCanvasS = document.getElementById('revenue-chart-canvas-student').getContext('2d');
 
     var salesChartDataS = {
@@ -573,7 +683,8 @@
           label: 'Student Present',
           backgroundColor: 'rgba(60,141,188,0.9)',
           borderColor: 'rgba(60,141,188,0.8)',
-          pointRadius: false,
+          pointRadius: 3,
+          pointHitRadius:10,
           pointColor: '#3b8bba',
           pointStrokeColor: 'rgba(60,141,188,1)',
           pointHighlightFill: '#fff',
@@ -584,7 +695,8 @@
           label: 'Total Student',
           backgroundColor: 'rgba(210, 214, 222, 1)',
           borderColor: 'rgba(210, 214, 222, 1)',
-          pointRadius: false,
+          pointRadius: 3,
+          pointHitRadius:10,
           pointColor: 'rgba(210, 214, 222, 1)',
           pointStrokeColor: '#c1c7d1',
           pointHighlightFill: '#fff',
@@ -620,6 +732,8 @@
       data: salesChartDataS,
       options: salesChartOptionsS
     })
+    // Dashboard-StudentAttendanceChartClose
+
   })
 </script>
 @endsection

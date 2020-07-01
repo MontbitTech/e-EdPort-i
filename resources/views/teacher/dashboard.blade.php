@@ -1,31 +1,43 @@
 @extends('teacher.include.app')
 @section('content')
 
-<!-- Content Wrapper. Contains page content -->
+<!-- Dashboard-Main-content -->
+
 <div class="content-wrapper">
-    <!-- Main content -->
+
+    <!-- Dashboard-Header-Content -->
+
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1 class="m-0 text-dark">Welcome [Teacher Name]</h1>
-                </div><!-- /.col -->
+                </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{route('teacher.dashboard')}}">Teacher</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Dashboard-Header-Content -->
+
+    <!-- Dashboard-Body-Content -->
+
     <section class="content">
         <div class="container-fluid">
 
             <div class="row  ">
+
+                <!-- Dashboard-all-lecture -->
+
                 <div class="col-md-6">
 
-                    <!-- small box -->
+                    <!-- Dashboard-Start-Lecture  -->
+
                     <div class="small-box bg-info ">
                         <div class="inner">
                             <h4>Division - 12 | Section - A</h4>
@@ -37,7 +49,9 @@
                         </div>
                         <a href="#" class="small-box-footer">Start Lecture <i class="fas fa-arrow-circle-right ml-2"></i></a>
                     </div>
+                    <!-- ./Dashboard-Start-Lecture  -->
 
+                    <!-- Dashboards-Today's-Lectures -->
                     <div class="card card-info">
                         <div class="card-header border-transparent">
                             <h3 class="card-title">My Today's Lectures</h3>
@@ -67,8 +81,8 @@
                                             <td>English</td>
                                             <td>
                                                 <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span>
                                             <td>
                                                 <a href="#">
@@ -80,8 +94,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -93,8 +107,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -106,8 +120,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -119,8 +133,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -132,8 +146,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -145,8 +159,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -158,8 +172,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -171,8 +185,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -184,8 +198,8 @@
                                             <td> 10-A</td>
                                             <td>English</td>
                                             <td> <span class="badge badge-info">
-                                                            9:00 AM
-                                                            </br> 10:00 AM
+                                                    9:00 AM
+                                                    </br> 10:00 AM
                                                 </span></td>
                                             <td>
                                                 <a href="#">
@@ -199,10 +213,18 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ./Dashboards-Today's-Lectures -->
+
                 </div>
+
+                <!-- ./Dashboard-all-lecture -->
+
+                <!-- Dashboard-Holiday-counting -->
+
                 <div class="col-md-6">
                     <div class="row">
 
+                        <!-- Dashboard-Student-Count -->
 
                         <div class="col-lg-6 col-6">
                             <div class="small-box bg-info ">
@@ -218,6 +240,11 @@
 
                             </div>
                         </div>
+
+                        <!-- ./Dashboard-Student-Count -->
+
+                        <!-- Dashboard-Subject-Count -->
+
                         <div class="col-lg-6 col-6 ">
                             <div class="small-box bg-info ">
                                 <div class="inner">
@@ -232,8 +259,12 @@
 
                             </div>
                         </div>
+
+                        <!-- ./Dashboard-Subject-Count -->
+
                     </div>
                     <div class="row">
+                        <!-- Dashboard-Lecture-Count -->
                         <div class="col-lg-6 col-6 ">
                             <div class="small-box bg-info ">
                                 <div class="inner">
@@ -248,6 +279,9 @@
 
                             </div>
                         </div>
+                        <!-- ./Dashboard-Lecture-Count -->
+
+                        <!-- Lecture-Lecture-Count -->
                         <div class="col-lg-6 col-6">
                             <div class="small-box bg-info ">
                                 <div class="inner">
@@ -262,7 +296,12 @@
 
                             </div>
                         </div>
+                        <!-- ./Dashboard-Lecture-Count -->
+
                     </div>
+
+                    <!-- Dashboard-Holiday-List -->
+
                     <div class="card card-info collapsed-card">
                         <div class="card-header border-transparent">
                             <h3 class="card-title">Teacher's Holiday List</h3>
@@ -345,11 +384,18 @@
                         <!-- /.card-footer -->
                     </div>
 
+                    <!-- ./Dashboard-Holiday-List -->
+
                 </div>
 
+                <!-- ./Dashboard-Holiday-counting -->
             </div>
 
         </div>
     </section>
+
+    <!-- ./Dashboard-Body-Content -->
+
 </div>
+<!-- ./Dashboard-Main-content  -->
 @endsection
