@@ -169,26 +169,21 @@
               <form role="form" enctype="multipart/form-data" id="addclassroomi" method="post" action="">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="select_teacher">Teacher Name</label>
-                    <select class="form-control select2" id="select_teacher" name="select_teacher" style="width: 100%;">
-                      <option value=''>Select an option</option>
-                      <option value="">Amit Sharma</option>
-                    </select>
-
+                    <label for="select_teacher">Class Name</label>
+                    <input type="text" id="add_class" name="add_class" class="form-control" placeholder="Enter Class Name">
                   </div>
                   <div class="form-group">
                     <label for="select_batch">Batch</label>
-                    <select class="form-control select2" id="select_batch" name="select_batch" style="width: 100%;">
-                      <option value=''>Select an option</option>
-                      <option value="">Evening</option>
-                      <option value="">Morning</option>
+                    <select multiple="multiple" data-placeholder="Select a Batch" class="form-control select2" id="select_batch" name="select_batch" style="width: 100%;">
+                      <option value="Evening">Evening</option>
+                      <option value="Morning">Morning</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="select_subject">Select Subject</label>
                     <select multiple="multiple" data-placeholder="Select a Subject" class="form-control select2" id="select_subject" name="select_subject" style="width: 100%;">
-                      <option value="">Math</option>
-                      <option value="">Science</option>
+                      <option value="Math">Math</option>
+                      <option value="Science">Science</option>
                     </select>
                   </div>
                 </div>

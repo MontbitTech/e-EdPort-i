@@ -48,12 +48,13 @@
                         <div class="card-body">
                             <form role="form">
                                 <div class="form-group">
-                                    <label for="exampleInputQuestion">Enter Examination Name</label>
+                                    <label for="exampleInputQuestion" class="mb-0">Enter Examination Name</label>
                                     <input type="text" class="form-control input-xs" id="exampleInputQuestion" placeholder="Exam name">
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputQuestion">Question 1</label>
-                                    <input type="text" class="form-control input-xs" id="exampleInputQuestion" placeholder="Insert your question">
+                                <hr>
+                                <div class="form-group mb-0 pb-1">
+                                    <label for="exampleInputQuestion" class="mb-0">Question 1</label>
+                                    <input type="text" class="form-control form-control-sm" id="exampleInputQuestion" placeholder="Insert your question">
                                 </div>
 
 
@@ -61,8 +62,10 @@
                                     <thead>
                                         <tr>
 
-                                            <th scope="col" class="text-center">option </th>
-                                            <th scope="col">Answer</th>
+                                            <th scope="col" class="text-center pb-0 pt-0 mb-0 mt-0">Option </th>
+                                            <th scope="col" class="pb-0 pt-0 mb-0 mt-0">Answer</th>
+                                            <th scope="col" class="text-center pb-0 pt-0 mb-0 mt-0">Option </th>
+                                            <th scope="col" class="pb-0 pt-0 mb-0 mt-0">Answer</th>
 
                                         </tr>
                                     </thead>
@@ -70,44 +73,40 @@
 
                                         <tr>
 
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-0 pb-1">
                                                 <input class="form-control form-control-sm  " type="text" placeholder="option 1">
 
                                             </td>
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-0 pb-0">
                                                 <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                             </td>
-                                        </tr>
-                                        <tr>
 
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-0 pb-1">
                                                 <input class="form-control form-control-sm  " type="text" placeholder="option 2">
 
                                             </td>
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-0 pb-0">
                                                 <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                             </td>
                                         </tr>
                                         <tr>
 
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-1 pb-0">
                                                 <input class="form-control form-control-sm  " type="text" placeholder="option 3">
 
                                             </td>
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-0 pb-0">
                                                 <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                             </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-1 pb-0">
                                                 <input class="form-control form-control-sm  " type="text" placeholder="option 4">
 
                                             </td>
-                                            <td>
+                                            <td class="mb-0 mt-0 pt-0 pb-0">
                                                 <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                             </td>
                                         </tr>
+
 
 
 
@@ -154,14 +153,19 @@
                             <div class="col-md-12 mt-1">
                                 <select class="form-control" name="select1" id="select1">
                                     <option value="">Class</option>
-                                    <option value="1">X</option>
+                                    <option onclick= value="1">X</option>
                                     <option value="2">XI</option>
                                     <option value="3">XII</option>
                                     <option value="4">V</option>
                                 </select>
                             </div>
                             <div class="col-md-12 mt-1">
-                                <select class="form-control" name="select2" id="select2">
+                                <div class="d-none" id="input1">
+
+                                    <input type="checkbox" value="1" name="evening" >dfjhgk
+                                </div>
+                                <input type="checkbox" value="2" name="eveningq" id="">
+                                <!-- <select class="form-control" name="select2" id="select2">
                                     <option value="">Batch</option>
                                     <option value="1">Evening</option>
                                     <option value="1">Morning</option>
@@ -171,7 +175,7 @@
                                     <option value="3">Morning</option>
                                     <option value="3">Afternoon</option>
                                     <option value="4">Afternoon</option>
-                                </select>
+                                </select> -->
                             </div>
 
 
@@ -203,12 +207,13 @@
             e.preventDefault();
             if (x < max_fields) { //max input box allowed
                 x++; //text box increment
-                $(wrapper).append(`<hr>
-                                    <div class="mt-1">
-                                    <label for="exampleInputQuestion">Question ` + x + `</label>
+                $(wrapper).append(`
+                                    <div class="">
+                                    <hr>
+                                    <label for="exampleInputQuestion"  class="mb-0 ">Question ` + x + `</label>
                                     <a href="#" style="float:right;" class="remove_field"><i class="fas fa-times"></i></a>
-                                   <div class="form-group">
-                                      <input type="text" class="form-control input-xs" id="exampleInputQuestion" placeholder="Insert your question">
+                                   <div class="form-group mb-0 pb-1">
+                                      <input type="text" class="form-control form-control-sm" id="exampleInputQuestion" placeholder="Insert your question">
                                     </div>
                                    
 
@@ -216,8 +221,10 @@
                                         <thead>
                                             <tr>
 
-                                                <th scope="col" class="text-center">option </th>
-                                                <th scope="col">Answer</th>
+                                                <th scope="col" class="text-center pb-0 pt-0 mb-0 mt-0">Option </th>
+                                                <th scope="col" class="pb-0 pt-0 mb-0 mt-0">Answer</th>
+                                                <th scope="col" class="text-center pb-0 pt-0 mb-0 mt-0">Option </th>
+                                                <th scope="col" class="pb-0 pt-0 mb-0 mt-0">Answer</th>
 
                                             </tr>
                                         </thead>
@@ -225,44 +232,39 @@
 
                                             <tr>
 
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-0 pb-1">
                                                     <input class="form-control form-control-sm  " type="text" placeholder="option 1">
 
                                                 </td>
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-0 pb-0">
                                                     <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                                 </td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>
+                                                 <td class="mb-0 mt-0 pt-0 pb-1">
                                                     <input class="form-control form-control-sm  " type="text" placeholder="option 2">
 
                                                 </td>
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-0 pb-0">
                                                     <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                                 </td>
                                             </tr>
                                             <tr>
 
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-1 pb-0">
                                                     <input class="form-control form-control-sm  " type="text" placeholder="option 3">
 
                                                 </td>
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-0 pb-0">
                                                     <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                                 </td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-0 pb-0">
                                                     <input class="form-control form-control-sm  " type="text" placeholder="option 4">
 
                                                 </td>
-                                                <td>
+                                                <td class="mb-0 mt-0 pt-1 pb-0">
                                                     <input type="checkbox" class="form-check-input form-control-sm  ml-4 ">
                                                 </td>
                                             </tr>
+                                            
 
                             
                            
@@ -283,7 +285,7 @@
 <script>
     var $select1 = $('#select1'),
         $select2 = $('#select2'),
-        $options = $select2.find('option');
+        $options = $select2.find('checkbox');
 
 
     $select1.on('change', function() {

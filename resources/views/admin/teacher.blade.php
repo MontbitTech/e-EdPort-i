@@ -183,6 +183,13 @@
                     <label for="teacher_phoneno">Phone No.</label>
                     <input type="text" id="teacher_phoneno" name="teacher_phoneno" class="form-control" placeholder="Enter Phone No">
                   </div>
+                  <div class="form-group">
+                    <label for="select_batch">Batch</label>
+                    <select multiple="multiple" data-placeholder="Select a Batch" class="form-control select2" id="teacher_batch" name="teacher_batch" style="width: 100%;">
+                      <option value="Evening">Evening</option>
+                      <option value="Morning">Morning</option>
+                    </select>
+                  </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="modal-footer justify-content-between">
@@ -255,6 +262,13 @@
                   <div class="form-group">
                     <label for="teacher_phoneno">Phone No.</label>
                     <input type="text" id="teacher_phoneno" name="teacher_phoneno" class="form-control" disabled value="+91 7383828382">
+                  </div>
+                  <div class="form-group">
+                    <label for="select_batch">Batch</label>
+                    <select multiple="multiple" data-placeholder="Select a Batch" disabled class="form-control select2" id="select_batch" name="select_batch" style="width: 100%;">
+                      <option value="Evening" selected>Evening</option>
+                      <option value="Morning" selected>Morning</option>
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="teacher_phoneno">Address.</label>

@@ -224,6 +224,14 @@
     <!-- AdminLTE App -->
     <script src="{{asset('assets/js/adminlte.min.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
+    <script>
+    $(function() {
+    $('.select2').select2({
+    tags: true,
+    tokenSeparators: [',', ' ']
+    })
+    });
+    </script>
 
 
 
