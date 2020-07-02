@@ -205,7 +205,7 @@
             </div><!-- /.card-header -->
             <div class="card-body">
               <div class="tab-content p-0">
-                <!-- Morris chart - Sales -->
+                <!-- Morris chart - Sales --> 
                 <div class="chart tab-pane active" id="revenue-chart-student" style="position: relative; height: 300px;">
                   <canvas id="revenue-chart-canvas-student" height="300" style="height: 300px;"></canvas>
                 </div>
@@ -736,4 +736,19 @@
 
   })
 </script>
+<script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+                "ordering": true,
+            });
+            $("#example2").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+                "ordering": true,
+                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
+            });
+        });
+  </script>
 @endsection

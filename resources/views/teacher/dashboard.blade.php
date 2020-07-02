@@ -299,7 +299,173 @@
                         <!-- ./Dashboard-Lecture-Count -->
 
                     </div>
+                    <!-- Dashboard-NoticeBoard -->
+                    <div class="card card-info">
+                        <div class="card-header border-transparent">
+                            <h3 class="card-title">Notice Board</h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <div class="table-responsive mt-1 p-2">
+                                <table id="example2" class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Notices</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Jonathan Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">7th November 2020 - 8:30 AM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        Lorem ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Sanju Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">6th November 2020 - 9:30 PM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        ABCD ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Raju Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">5th November 2020 - 7:30 PM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        Lorem ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Raju Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">5th November 2020 - 7:30 PM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        Lorem ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Raju Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">5th November 2020 - 7:30 PM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        Lorem ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Raju Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">5th November 2020 - 7:30 PM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        Lorem ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="post">
+                                                    <div class="user-block">
+                                                        <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
+                                                        <span class="username">
+                                                            <a href="#">Sam Burke Jr.</a>
+                                                            <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                                                        </span>
+                                                        <span class="description">5th November 2020 - 6:30 PM</span>
+                                                    </div>
+                                                    <!-- /.user-block -->
+                                                    <p style="font-size: smaller;">
+                                                        Lorem ipsum represents a long-held tradition for designers,
+                                                        typographers and the like.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.card-body -->
+                        <!-- <div class="card-footer clearfix">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-notice" style="width:100%;">Add Notice</a>
+                        </div> -->
+                        <!-- /.card-footer -->
+                    </div>
+                    <!-- ./Dashboard-NoticeBoard -->
                     <!-- Dashboard-Holiday-List -->
 
                     <div class="card card-info collapsed-card">
@@ -398,4 +564,14 @@
 
 </div>
 <!-- ./Dashboard-Main-content  -->
+<script>
+        $(function() {
+            $("#example2").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+                "ordering": true,
+                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
+            });
+        });
+  </script>
 @endsection

@@ -143,7 +143,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="{{route('admin.teacher')}}" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Teacher
@@ -226,21 +226,7 @@
     <!-- AdminLTE for demo purposes -->
 
 
-    <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-            });
-            $("#example2").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
-            });
-        });
-    </script>
+
     @if ( Session::has('flash_message') )
     <script type="text/javascript">
         const Toast = Swal.mixin({

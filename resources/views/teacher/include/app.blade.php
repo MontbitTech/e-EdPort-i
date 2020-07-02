@@ -143,7 +143,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="{{route('teacher.examination')}}" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Examination
@@ -178,7 +178,7 @@
 
 
     <!-- SweetAlert2 -->
-    <script src="{{asset('assets/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
+    <script src=" {{asset('assets/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
     <!-- Toastr -->
     <script src="{{asset('assets/plugins/toastr/toastr.min.js')}}"></script>
     <!-- Bootstrap 4 -->

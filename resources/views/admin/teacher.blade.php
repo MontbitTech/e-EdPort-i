@@ -1,5 +1,10 @@
 @extends('admin.include.app')
 @section('content')
+<style>
+  div#example2_filter.dataTables_filter input {
+    width: 70%;
+  }
+</style>
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
@@ -26,7 +31,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- Teacher-Table -->
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="card card-secondary">
             <div class="card-header border-transparent">
               <h3 class="card-title">Add Teacher</h3>
@@ -44,6 +49,7 @@
                     <tr>
                       <th>Teacher Name</th>
                       <th>Teacher Email</th>
+                      <th> Phone No.</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -52,6 +58,7 @@
                     <tr>
                       <td>Amit Sharma</td>
                       <td>amit@gmail.com</td>
+                      <td>+91 7737737377</td>
                       <td>
                         <div style="margin:-0.4375em;">
                           <button type="button" class="btn"><i class="fas fa-edit"></i></button>
@@ -63,6 +70,7 @@
                     <tr>
                       <td>Ram Kumar</td>
                       <td>ram@gmail.com</td>
+                      <td>+91 7737737377</td>
                       <td>
                         <div style="margin:-0.4375em;">
                           <button type="button" class="btn"><i class="fas fa-edit"></i></button>
@@ -89,13 +97,13 @@
         <!-- /.Teacher-Table -->
 
         <!-- Teacher-BatchTable -->
-        <div class="col-md-6">
-          <div class="card card-secondary">
+        <div class="col-md-4">
+          <div class="card card-secondary collapsed-card">
             <div class="card-header border-transparent">
               <h3 class="card-title">Add Batch</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
+                  <i class="fas fa-plus"></i>
                 </button>
               </div>
             </div>
@@ -248,6 +256,10 @@
                     <label for="teacher_phoneno">Phone No.</label>
                     <input type="text" id="teacher_phoneno" name="teacher_phoneno" class="form-control" disabled value="+91 7383828382">
                   </div>
+                  <div class="form-group">
+                    <label for="teacher_phoneno">Address.</label>
+                    <input type="text" id="teacher_address" name="teacher_address" class="form-control" disabled value="Bombay,India">
+                  </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="modal-footer justify-content-between">
@@ -332,4 +344,19 @@
     });
   });
 </script>
+<script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+                "ordering": true,
+            });
+            $("#example2").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+                "ordering": true,
+                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
+            });
+        });
+    </script>
 @endsection
