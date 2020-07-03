@@ -29,6 +29,7 @@ Route::get('admin/classroom', 'Admin\ClassroomController@index')->name('admin.cl
 Route::get('admin/teacher', 'Admin\TeacherController@index')->name('admin.teacher');
 // Timetable
 // Student
+Route::get('admin/student', 'Admin\StudentController@index')->name('admin.student');
 // Content
 // Support
 // Setting
@@ -81,3 +82,4 @@ Route::get('student/profile', 'Student\ProfileController@index')->name('student.
 */
 // Dashboard
 Route::get('principal/dashboard', 'Principal\DashboardController@index')->name('principal.dashboard');
+Route::get('principal/teacher', 'Principal\TeacherController@index')->name('principal.teacher');

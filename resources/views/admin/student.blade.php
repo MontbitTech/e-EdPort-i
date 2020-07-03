@@ -13,33 +13,33 @@
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
-  <!-- Teacher-HeaderContent -->
+  <!-- Student-HeaderContent -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Teacher</h1>
+          <h1 class="m-0 text-dark">Student</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="{{route('admin.teacher')}}">Admin</a></li>
-            <li class="breadcrumb-item active">Teacher</li>
+            <li class="breadcrumb-item"><a href="{{route('admin.student')}}">Admin</a></li>
+            <li class="breadcrumb-item active">Student</li>
           </ol>
         </div>
       </div>
     </div>
   </div>
-  <!-- /.Teacher-HeaderContent -->
+  <!-- /.Student-HeaderContent -->
 
   <!-- Section Content -->
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <!-- Teacher-Table -->
+        <!-- Student-Table -->
         <div class="col-md-8">
           <div class="card card-secondary">
             <div class="card-header border-transparent">
-              <h3 class="card-title">Add Teacher</h3>
+              <h3 class="card-title">Add Student</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
@@ -52,35 +52,35 @@
                 <table id="example1" class="table table-bordered table-striped table-sm">
                   <thead>
                     <tr>
-                      <th>Teacher Name</th>
-                      <th>Teacher Email</th>
-                      <th> Phone No.</th>
+                      <th>Student Name</th>
+                      <th>Student Email</th>
+                      <th>Phone No.</th>
                       <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
 
                     <tr>
-                      <td>Amit Sharma</td>
-                      <td>amit@gmail.com</td>
+                      <td>Vaibhav Sharma</td>
+                      <td>vaibhav@gmail.com</td>
                       <td>+91 7737737377</td>
                       <td>
                         <div style="margin:-0.4375em;">
                           <button type="button" class="btn"><i class="fas fa-edit"></i></button>
                           <button type="button" class="btn"><i class="fas fa-trash"></i></button>
-                          <button type="button" class="btn" data-toggle="modal" data-target="#modal-view-teacher"><i class="fas fa-eye"></i></button>
+                          <button type="button" class="btn" data-toggle="modal" data-target="#modal-view-student"><i class="fas fa-eye"></i></button>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td>Ram Kumar</td>
-                      <td>ram@gmail.com</td>
+                      <td>Anuj Kumar</td>
+                      <td>anuj@gmail.com</td>
                       <td>+91 7737737377</td>
                       <td>
                         <div style="margin:-0.4375em;">
                           <button type="button" class="btn"><i class="fas fa-edit"></i></button>
                           <button type="button" class="btn"><i class="fas fa-trash"></i></button>
-                          <button type="button" class="btn" data-toggle="modal" data-target="#modal-view-teacher"><i class="fas fa-eye"></i></button>
+                          <button type="button" class="btn" data-toggle="modal" data-target="#modal-view-student"><i class="fas fa-eye"></i></button>
                         </div>
                       </td>
                     </tr>
@@ -93,15 +93,15 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-teacher" style="width:100%;">Add Teacher</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-student" style="width:100%;">Add Student</a>
             </div>
             <!-- /.card-footer -->
           </div>
 
         </div>
-        <!-- /.Teacher-Table -->
+        <!-- /.Student-Table -->
 
-        <!-- Teacher-BatchTable -->
+        <!-- Student-BatchTable -->
         <div class="col-md-4">
           <div class="card card-secondary collapsed-card">
             <div class="card-header border-transparent">
@@ -118,12 +118,12 @@
                 <div class="card-body pb-0">
 
                   <div class="form-group">
-                    <label for="select_batch">Teacher</label>
-                    <select data-placeholder="Select a teacher" class="form-control select2" id="select_teacher" name="select_teacher" style="width: 100%;">
-                      <option value="Amit Sharma">Amit Sharma</option>
-                      <option value="Ram Kumar">Ram Kumar</option>
+                    <label for="select_batch">Student</label>
+                    <select data-placeholder="Select a Student" class="form-control select2" id="select_student" name="select_student" style="width: 100%;">
+                      <option value="Vaibhav">Vaibhav Sharma</option>
+                      <option value="Anuj">Anuj Kumar</option>
                     </select>
-                  </div> 
+                  </div>
                   <div class="form-group">
                     <label for="select_class">Class</label>
                     <select data-placeholder="Select a Class" class="form-control select2" id="select_class" name="select_class" style="width: 100%;">
@@ -155,7 +155,7 @@
                           Afternoon
                         </label>
                       </div>
-</div>
+                    </div>
                     </div>
                     <div class="2 box">
                     <label for="holiday_from">Batch</label>
@@ -173,7 +173,7 @@
                           Morning
                         </label>
                       </div>
-</div>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -190,43 +190,40 @@
           </div>
 
         </div>
-        <!-- /.Teacher-BatchTable -->
+        <!-- /.Student-BatchTable -->
       </div>
       <!-- /.row -->
 
       <!-- All Modal Open-->
-      <!-- Teacher-AddModal -->
-      <div class="modal fade" id="modal-add-edit-teacher">
+      <!-- Student-AddModal -->
+      <div class="modal fade" id="modal-add-edit-student">
         <div class="modal-dialog modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Add Teacher</h4>
+              <h4 class="modal-title">Add Student</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <form role="form" enctype="multipart/form-data" id="addteacheri" method="post" action="">
+              <form role="form" enctype="multipart/form-data" id="addstudenti" method="post" action="">
                 <div class="card-body">
                   <input type="hidden" value='' id="select_id" name="select_id" />
                   <div class="form-group">
-                    <label for="teacher_name">Teacher Name</label>
-                    <input type="text" id="teacher_name" name="teacher_name" class="form-control" placeholder="Enter Teacher Name">
+                    <label for="student_name">Student Name</label>
+                    <input type="text" id="student_name" name="student_name" class="form-control" placeholder="Enter Student Name">
                   </div>
                   <div class="form-group">
-                    <label for="teacher_email">Teacher Email</label>
-                    <input type="text" id="teacher_email" name="teacher_email" class="form-control" placeholder="Enter Teacher Email">
+                    <label for="student_email">Student Email</label>
+                    <input type="text" id="student_email" name="student_email" class="form-control" placeholder="Enter Student Email">
                   </div>
                   <div class="form-group">
-                    <label for="teacher_phoneno">Phone No.</label>
-                    <input type="text" id="teacher_phoneno" name="teacher_phoneno" class="form-control" placeholder="Enter Phone No">
+                    <label for="student_phoneno">Phone No.</label>
+                    <input type="text" id="student_phoneno" name="student_phoneno" class="form-control" placeholder="Enter Phone No">
                   </div>
                   <div class="form-group">
-                    <label for="select_batch">Batch</label>
-                    <select multiple="multiple" data-placeholder="Select a Batch" class="form-control select2" id="teacher_batch" name="teacher_batch" style="width: 100%;">
-                      <option value="Evening">Evening</option>
-                      <option value="Morning">Morning</option>
-                    </select>
+                    <label for="student_dob">Date Of Birth</label>
+                    <input type="date" id="student_dob" name="student_dob" class="form-control" placeholder="Enter DOB">
                   </div>
                 </div>
                 <!-- /.card-body -->
@@ -241,9 +238,9 @@
           </div>
         </div>
       </div>
-      <!-- ./Teacher-AddModal-->
+      <!-- ./Student-AddModal-->
 
-      <!-- Teacher-BatchModal -->
+      <!-- Student-BatchModal -->
       <div class="modal fade" id="modal-add-edit-batch">
         <div class="modal-dialog modal-md">
           <div class="modal-content">
@@ -273,44 +270,40 @@
           </div>
         </div>
       </div>
-      <!-- ./Teacher-BatchModal-->
+      <!-- ./Student-BatchModal-->
 
-      <!-- Teacher-ViewModal -->
-      <div class="modal fade" id="modal-view-teacher">
+      <!-- Student-ViewModal -->
+      <div class="modal fade" id="modal-view-student">
         <div class="modal-dialog modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">View Teacher</h4>
+              <h4 class="modal-title">View Student</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <form role="form" enctype="multipart/form-data" id="addteacheri" method="post" action="">
+              <form role="form" enctype="multipart/form-data" id="addstudenti" method="post" action="">
                 <div class="card-body">
-                  <input type="hidden" value='' id="select_id" name="select_id" />
                   <div class="form-group">
-                    <label for="teacher_name">Teacher Name</label>
-                    <input type="text" id="teacher_name" name="teacher_name" class="form-control" disabled value="Amit Sharma">
+                    <label for="student_name">Student Registration No.</label>
+                    <input type="text" id="student_regno" name="student_regno" class="form-control" disabled value="2016ACSC0117082">
                   </div>
                   <div class="form-group">
-                    <label for="teacher_email">Teacher Email</label>
-                    <input type="text" id="teacher_email" name="teacher_email" class="form-control" disabled value="amit@gmail.com">
+                    <label for="student_name">Student Name</label>
+                    <input type="text" id="student_name" name="student_name" class="form-control" disabled value="Vaibhav Sharma">
                   </div>
                   <div class="form-group">
-                    <label for="teacher_phoneno">Phone No.</label>
-                    <input type="text" id="teacher_phoneno" name="teacher_phoneno" class="form-control" disabled value="+91 7383828382">
+                    <label for="student_email">Student Email</label>
+                    <input type="text" id="student_email" name="student_email" class="form-control" disabled value="vaibhav@gmail.com">
                   </div>
                   <div class="form-group">
-                    <label for="select_batch">Batch</label>
-                    <select multiple="multiple" data-placeholder="Select a Batch" disabled class="form-control select2" id="select_batch" name="select_batch" style="width: 100%;">
-                      <option value="Evening" selected>Evening</option>
-                      <option value="Morning" selected>Morning</option>
-                    </select>
+                    <label for="student_phoneno">Phone No.</label>
+                    <input type="text" id="student_phoneno" name="student_phoneno" class="form-control" disabled value="+91 7383828382">
                   </div>
                   <div class="form-group">
-                    <label for="teacher_phoneno">Address.</label>
-                    <input type="text" id="teacher_address" name="teacher_address" class="form-control" disabled value="Bombay,India">
+                  <label for="student_dob">DOB.</label>
+                    <input type="text" id="student_phoneno" name="student_phoneno" class="form-control" disabled value="22-Jul-2020">
                   </div>
                 </div>
                 <!-- /.card-body -->
@@ -324,7 +317,7 @@
           </div>
         </div>
       </div>
-      <!-- ./Teacher-ViewModal-->
+      <!-- ./Student-ViewModal-->
 
       <!-- All Modal Close-->
     </div>
@@ -340,26 +333,27 @@
         form.submit();
       }
     });
-    $('#addteacheri').validate({
+    $('#addstudenti').validate({
       rules: {
-        teacher_name: {
+        student_name: {
           required: true
         },
-        teacher_email: {
+        student_email: {
           required: true
         },
-        teacher_phoneno: {
+        student_phoneno: {
           required: true
         },
       },
       messages: {
-        teacher_name: {
-          required: "Please Enter Teacher Name"
+        student_name: {
+          required: "Please Enter Student Name"
         },
-        teacher_email: {
-          required: "Please Enter Teacher Email"
+        student_email: {
+          required: "Please Enter Student Email"
         },
-        teacher_phoneno: "Please Enter Teacher Phone No."
+        student_phoneno: "Please Enter Student Phone No.",
+        student_dib: "Please Enter Student DOB."
       },
       errorElement: 'span',
       errorPlacement: function(error, element) {
