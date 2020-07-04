@@ -1,5 +1,10 @@
 @extends('admin.include.app')
 @section('content')
+<style>
+  div#example1_filter.dataTables_filter input {
+    width: 70%;
+  }
+</style>
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
@@ -49,7 +54,7 @@
           <!-- small box -->
           <div class="small-box bg-secondary">
             <div class="inner">
-              <h3>150/300</h3>
+              <h3>99/300</h3>
 
               <p>Online Students</p>
             </div>
@@ -205,7 +210,7 @@
             </div><!-- /.card-header -->
             <div class="card-body">
               <div class="tab-content p-0">
-                <!-- Morris chart - Sales --> 
+                <!-- Morris chart - Sales -->
                 <div class="chart tab-pane active" id="revenue-chart-student" style="position: relative; height: 300px;">
                   <canvas id="revenue-chart-canvas-student" height="300" style="height: 300px;"></canvas>
                 </div>
@@ -452,6 +457,7 @@
                       </td>
                     </tr>
 
+
                   </tbody>
                 </table>
               </div>
@@ -530,7 +536,7 @@
                 </div>
                 <div class="modal-footer justify-content-between">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
+                  <button type="submit" class="btn btn-primary">Save</button>
                 </div>
 
               </form>
@@ -591,7 +597,7 @@
                 </div>
                 <div class="modal-footer justify-content-between">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
+                  <button type="submit" class="btn btn-primary">Save</button>
                 </div>
 
               </form>
@@ -624,7 +630,7 @@
           backgroundColor: 'rgba(60,141,188,0.9)',
           borderColor: 'rgba(60,141,188,0.8)',
           pointRadius: 3,
-          pointHitRadius:10,
+          pointHitRadius: 10,
           pointColor: '#3b8bba',
           pointStrokeColor: 'rgba(60,141,188,1)',
           pointHighlightFill: '#fff',
@@ -636,7 +642,7 @@
           backgroundColor: 'rgba(210, 214, 222, 1)',
           borderColor: 'rgba(210, 214, 222, 1)',
           pointRadius: 3,
-          pointHitRadius:10,
+          pointHitRadius: 10,
           pointColor: 'rgba(210, 214, 222, 1)',
           pointStrokeColor: '#c1c7d1',
           pointHighlightFill: '#fff',
@@ -684,7 +690,7 @@
           backgroundColor: 'rgba(60,141,188,0.9)',
           borderColor: 'rgba(60,141,188,0.8)',
           pointRadius: 3,
-          pointHitRadius:10,
+          pointHitRadius: 10,
           pointColor: '#3b8bba',
           pointStrokeColor: 'rgba(60,141,188,1)',
           pointHighlightFill: '#fff',
@@ -696,7 +702,7 @@
           backgroundColor: 'rgba(210, 214, 222, 1)',
           borderColor: 'rgba(210, 214, 222, 1)',
           pointRadius: 3,
-          pointHitRadius:10,
+          pointHitRadius: 10,
           pointColor: 'rgba(210, 214, 222, 1)',
           pointStrokeColor: '#c1c7d1',
           pointHighlightFill: '#fff',
@@ -737,18 +743,21 @@
   })
 </script>
 <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-            });
-            $("#example2").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
-            });
-        });
-  </script>
+  $(function() {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+      "ordering": true,
+    });
+    $("#example2").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+      "ordering": true,
+      "lengthMenu": [
+        [3, 8, 15, 25, -1],
+        [3, 8, 15, 25, "All"]
+      ]
+    });
+  });
+</script>
 @endsection

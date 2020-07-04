@@ -48,7 +48,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body p-0">
-              <div class="mt-1 p-2">
+              <div class="table-responsive mt-1 p-2">
                 <table id="example1" class="table table-bordered table-striped table-sm">
                   <thead>
                     <tr>
