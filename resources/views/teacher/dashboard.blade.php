@@ -222,11 +222,11 @@
                 <!-- Dashboard-Holiday-counting -->
 
                 <div class="col-md-6">
-                    <div class="row">
+                    <!-- <div class="row"> -->
 
                         <!-- Dashboard-Student-Count -->
 
-                        <div class="col-lg-6 col-6">
+                        <!-- <div class="col-lg-6 col-6">
                             <div class="small-box bg-info ">
                                 <div class="inner">
                                     <h4>50</h4>
@@ -239,33 +239,20 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- ./Dashboard-Student-Count -->
 
                         <!-- Dashboard-Subject-Count -->
 
-                        <div class="col-lg-6 col-6 ">
-                            <div class="small-box bg-info ">
-                                <div class="inner">
-                                    <h4>5</h4>
-
-                                    <p> My Subject Count</p>
-
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-book"></i>
-                                </div>
-
-                            </div>
-                        </div>
+                        <!-- -->
 
                         <!-- ./Dashboard-Subject-Count -->
 
-                    </div>
-                    <div class="row">
+                    <!-- </div>
+                    <div class="row"> -->
                         <!-- Dashboard-Lecture-Count -->
-                        <div class="col-lg-6 col-6 ">
+                        <!-- <div class="col-lg-6 col-6 ">
                             <div class="small-box bg-info ">
                                 <div class="inner">
                                     <h4>5</h4>
@@ -278,11 +265,11 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
                         <!-- ./Dashboard-Lecture-Count -->
 
                         <!-- Lecture-Lecture-Count -->
-                        <div class="col-lg-6 col-6">
+                        <!-- <div class="col-lg-6 col-6">
                             <div class="small-box bg-info ">
                                 <div class="inner">
                                     <h4>5</h4>
@@ -295,10 +282,10 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
                         <!-- ./Dashboard-Lecture-Count -->
 
-                    </div>
+                    <!-- </div> -->
                     <!-- Dashboard-NoticeBoard -->
                     <div class="card card-info">
                         <div class="card-header border-transparent">

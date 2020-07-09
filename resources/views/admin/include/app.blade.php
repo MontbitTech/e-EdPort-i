@@ -230,9 +230,16 @@
     tags: true,
     tokenSeparators: [',', ' ']
     })
+    $('.select1').select2()
     });
     </script>
-
+    <!-- bs-custom-file-input -->
+    <script src="{{asset('assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+    bsCustomFileInput.init();
+    });
+    </script>
 
 
     @if ( Session::has('flash_message') )

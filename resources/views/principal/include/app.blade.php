@@ -143,7 +143,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="{{route('principal.teacher')}}" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Teacher
@@ -224,6 +224,22 @@
     <!-- AdminLTE App -->
     <script src="{{asset('assets/js/adminlte.min.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
+    <script>
+    $(function() {
+    $('.select2').select2({
+    tags: true,
+    tokenSeparators: [',', ' ']
+    })
+    $('.select1').select2()
+    });
+    </script>
+    <!-- bs-custom-file-input -->
+    <script src="{{asset('assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+    bsCustomFileInput.init();
+    });
+    </script>
 
 
 

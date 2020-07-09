@@ -192,6 +192,22 @@
     <!-- AdminLTE App -->
     <script src="{{asset('assets/js/adminlte.min.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
+    <script>
+    $(function() {
+    $('.select2').select2({
+    tags: true,
+    tokenSeparators: [',', ' ']
+    })
+    $('.select1').select2()
+    });
+    </script>
+    <!-- bs-custom-file-input -->
+    <script src="{{asset('assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+    bsCustomFileInput.init();
+    });
+    </script>
 
 
     <script>

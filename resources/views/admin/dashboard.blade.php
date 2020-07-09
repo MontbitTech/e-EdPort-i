@@ -143,7 +143,7 @@
         <!-- Dashboard-DiskSpaceUsage -->
         <div class="col-12 col-sm-6 col-md-3">
           <div class="info-box mb-3">
-            <span class="info-box-icon bg-success elevation-1"><i class="far fa-database"></i></span>
+            <span class="info-box-icon bg-success elevation-1"><i class="fas fa-disc-drive"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">DiskSpace Usage</span>
@@ -387,7 +387,7 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-notice" style="width:100%;">Add Notice</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-notice" style="width:100%;"><i class="fas fa-plus-circle mr-3"></i>Add Notice</a>
             </div>
             <!-- /.card-footer -->
           </div>
@@ -465,7 +465,7 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-holiday" style="width:100%;">Add Holiday</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-holiday" style="width:100%;"><i class="fas fa-plus-circle mr-3"></i>Add Holiday</a>
             </div>
             <!-- /.card-footer -->
           </div>

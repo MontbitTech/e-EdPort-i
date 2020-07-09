@@ -1,6 +1,11 @@
 @extends('student.include.app')
 @section('content')
+<style>
+    .subj {
 
+        display: none;
+    }
+</style>
 <!-- Wrapper-->
 <div class="wrapper">
 
@@ -106,49 +111,69 @@
 
                                 </div>
                             </div>
-                            
-                            <div class="card-body pt-2 pb-0">
-                                <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
-                                 <li class="nav-item">
-                                 <a class="nav-link active" id="custom-content-below-eng-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">English</a>
-                                 </li>
-                                 <li class="nav-item">
-                                 <a class="nav-link active" id="custom-content-below-science-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Math</a>
-                                 </li>
-                                 <li class="nav-item">
-                                 <a class="nav-link active" id="custom-content-below-maths-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Science</a>
-                                 </li>
-                                 <li class="nav-item">
-                                 <a class="nav-link active" id="custom-content-below-hindi-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Hindi</a>
-                                 </li>
-                                </ul>
-                                <div class="tab-content" id="custom-content-below-tabContent">
-                                <div class="tab-pane fade show active" id="custom-content-below-eng" role="tabpanel" aria-labelledby="custom-content-below-eng-tab">
-                                <div class="table-responsive mt-1 p-2">
-                                <table id="example1" class="table table-bordered table-striped table-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Exam Name</th>
-                                                        <th>Marks</th>
-                                                        <th>Percentage</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>[Exam Name]</td>
-                                                        <td>[Marks]</td>
-                                                        <td><span class="badge badge-info"> 90%
-                                                            </span></td>
-                                                    </tr>
 
-                                                </tbody>
-                                              </table> 
-                                           </div>
+                            <div class="card-body pt-2 pb-2">
+                                <select data-placeholder="Select subject Name" class="form-control select1 " style="width:100%">
+                                    <option value="">Select subject Name</option>
+                                    <option value="english">English</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="math">Math</option>
+                                </select>
 
-                                          </div>
+                                <!-- English -->
 
-                                            </div> 
-                                            </div>
+                                <div class="table-responsive subj english mt-1 p-2">
+                                    <label for="select_dob">English</label>
+                                    <table id="example1" class="table table-bordered table-striped table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Exam Name</th>
+                                                <th>Marks</th>
+                                                <th>Percentage</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>[Exam Name]</td>
+                                                <td>[Marks]</td>
+                                                <td><span class="badge badge-info"> 90%
+                                                    </span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- ./English -->
+
+                                <!-- Hindi -->
+
+                                <div class="table-responsive subj hindi mt-1 p-2">
+                                    <label for="select_dob">Hindi</label>
+                                    <table id="example2" class="table table-bordered table-striped table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Exam Name</th>
+                                                <th>Marks</th>
+                                                <th>Percentage</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>[Exam Name]</td>
+                                                <td>[Marks]</td>
+                                                <td><span class="badge badge-info"> 90%
+                                                    </span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- ./Hindi -->
+
+                            </div>
+
                         </div>
                         <!-- /.Profile-Performance card -->
 
@@ -191,16 +216,29 @@
 
                 </div>
                 <!-- /.container-fluid -->
-                
+
         </section>
     </div>
 
     <!-- /.content-wrapper -->
 </div>
-
 <script>
-
-$(function() {
+    $(document).ready(function() {
+        $("select").change(function() {
+            $(this).find("option:selected").each(function() {
+                var optionValue = $(this).attr("value");
+                if (optionValue) {
+                    $(".subj").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else {
+                    $(".subj").hide();
+                }
+            });
+        }).change();
+    });
+</script>
+<script>
+    $(function() {
         $("#example2").DataTable({
             "responsive": true,
             "autoWidth": false,

@@ -150,7 +150,7 @@
 
 
                         <div class="card-body">
-                            <select class="form-control">
+                            <select class="form-control select2">
                                 <option value="">Select Examination Name</option>
                                 <option value="12th">12th Board Exam</option>
                                 <option value="10th">10th Board Exam</option>
@@ -258,15 +258,18 @@
 
                         <div class="card-body pt-2 pb-0">
                             <div class="col-md-12 mt-1">
-                                <select class="form-control">
+                                <label class="d-block mb-2">Examination</label>
+                                <select data-placeholder="Examination" class="form-control select2" style="width: 100%;">
+
                                     <option value="">Examination</option>
-                                    <option value="">Summer</option>
-                                    <option value="">Winter</option>
-                                    <option value="">Unit</option>
+                                    <option value="Summer">Summer</option>
+                                    <option value="Winter">Winter</option>
+                                    <option value="Unit">Unit</option>
                                 </select>
                             </div>
                             <div class="col-md-12 mt-1">
-                                <select class="form-control" name="select1" id="select1">
+                                <label class="d-block mb-2">Class</label>
+                                <select class="form-control select1 " data-placeholder="Class" name="select1" id="select1" style="width: 100%;">
                                     <option value="">Class</option>
                                     <option value="1">X</option>
                                     <option value="2">XI</option>

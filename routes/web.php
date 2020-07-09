@@ -32,6 +32,7 @@ Route::get('admin/teacher', 'Admin\TeacherController@index')->name('admin.teache
 Route::get('admin/student', 'Admin\StudentController@index')->name('admin.student');
 // Content
 // Support
+Route::get('admin/support', 'Admin\SupportController@index')->name('admin.support');
 // Setting
 
 
@@ -47,12 +48,13 @@ Route::get('admin/student', 'Admin\StudentController@index')->name('admin.studen
 Route::get('teacher/dashboard', "Teacher\DashboardController@index")->name('teacher.dashboard');
 // Lecture
 Route::get('teacher/lecture', 'Teacher\LectureController@index')->name('teacher.lecture');
-
 // Examination
 Route::get('teacher/examination', 'Teacher\ExaminationController@index')->name('teacher.examination');
-
 // Setting
-
+// Register
+Route::get('teacher/register', 'Teacher\RegisterController@index')->name('teacher.register');
+// Register
+Route::get('teacher/login', 'Teacher\LoginController@index')->name('teacher.login');
 
 /*
 |--------------------------------------------------------------------------
@@ -67,8 +69,11 @@ Route::get('student/dashboard', 'Student\DashboardController@index')->name('stud
 // Lecture
 Route::get('student/lecture', 'Student\LectureController@index')->name('student.lecture');
 // Examination
-Route::get('student/profile', 'Student\ProfileController@index')->name('student.profile');
+Route::get('student/examination', 'Student\ExaminationController@index')->name('student.examination');
 // Profile
+Route::get('student/profile', 'Student\ProfileController@index')->name('student.profile');
+// Register
+Route::get('student/register', 'Student\RegisterController@index')->name('student.register');
 
 
 

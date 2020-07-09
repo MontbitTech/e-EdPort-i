@@ -3,7 +3,6 @@
 
 <!-- Lecture-Main-Content -->
 <div class="content-wrapper">
-
   <!-- Lecture-Header-Content -->
   <div class="content-header">
     <div class="container-fluid">
@@ -24,54 +23,53 @@
 
   <!-- Lecture-Body-Content -->
   <section class="content">
-
     <div class="container-fluid">
-
       <!-- Lecture-On-Going-Lecture -->
       <div class="row">
         <div class="col-md-12">
-
           <div class="card card-info ">
             <div class="card-header border-transparent">
               <h3 class="card-title">On Going Lectures</h3>
-
               <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i>
+                </button>
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
                 </button>
-
               </div>
             </div>
-            <div class="card-body p-0" style="max-height:25rem;overflow:scroll; min-height:10rem;">
+            <div class="card-body p-0" style=" min-height:25rem; max-height:25rem; overflow:hidden">
               <div class="container-fluid">
                 <div class="row pt-2">
                   <div class="col-md-8 col-sm-6">
-                    <div id="siteloader" class="card-body p-0 w-100 embed-responsive embed-responsive-21by9">
+                    <!--TODO: Try http://leimi.github.io/drawingboard.js/ Whiteboard here -->
+                    <div class="card ">
 
+                      <div class="card-body m-0 p-0" id="myFrame">
+                        <button type="button" onclick="myFunction()" class="btn position-static btn-tool btn-info d-inline text-primary " data-card-widget="maximize"><i class="fas fa-expand"></i>
+                        </button>
+                        <div id="siteloader" class="card-body p-0 w-100 embed-responsive embed-responsive-21by9">
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-md-4 col-sm-6">
 
-                    <button onclick="myFunction()" class="btn btn-block bg-gradient-info btn-xs mt-2 mr-2">Start Live Lecture <i class="fas fa-arrow-circle-right ml-2"></i></button>
-                      <select class="custom-select mt-2">
-                        <option selected>Select The Topic</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <!-- <button onclick="onnew()" class="btn btn-lg d-block btn-info">new</button> -->
+                    <button onclick="myFunction()" class="btn btn-block bg-gradient-info btn-xs mt-2  mb-2 mr-2">Start Live Lecture <i class="fas fa-arrow-circle-right ml-2"></i></button>
+                    <select class="custom-select select1 w-100 mt-2">
+                      <option selected>Select The Topic</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <!-- <button onclick="onnew()" class="btn btn-lg d-block btn-info">new</button> -->
                   </div>
                 </div>
-
               </div>
-
-
             </div>
-
           </div>
-
         </div>
-
       </div>
       <!-- ./Lecture-On-Going-Lecture -->
 
@@ -446,6 +444,12 @@
 <!-- ./Lecture-Main-Content -->
 
 <!-- Lecture-other-site-show-code -->
+
+<script>
+  function myFunction() {
+    document.getElementById("myFrame").width = "100% !important";
+  }
+</script>
 <script>
   $("#siteloader").html('<object data="http://cms.schooltimes.ca" />');
 </script>
