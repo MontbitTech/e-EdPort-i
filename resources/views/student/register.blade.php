@@ -3,16 +3,18 @@
 
 <div class="container">
     <div class="row">
-        <div class="teacher-register-box">
-            <div class="register-logo">
+        <div class="teacher-register-box pt-2">
+            
+
+            <div class="card card-secondary">
+                <div class="card-header border-transparent">
+                    <div class="register-logo">
                 <a href="">
                     <img src="{{asset('assets/img/logo.png')}}" width="40" alt="[school_name_logo]" class="brand-image ">
                     <b>Delhi Public School</b>
-                    <!-- <img src="{{asset('assets/img/logo.png')}}" width="3.5rem" alt="[school_name_logo]" class="brand-image"> -->
                 </a>
-            </div>
-
-            <div class="card">
+                    </div>
+                </div>
                 <div class="card-body register-card-body">
                     <h4 class="login-box-msg"> Student Admission</h4>
 

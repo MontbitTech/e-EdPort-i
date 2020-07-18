@@ -34,9 +34,7 @@
     <!-- jquery-validation -->
     <script src="{{asset('assets/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
     <script src="{{asset('assets/plugins/jquery-validation/additional-methods.min.js')}}"></script>
-    <script>
 
-    </script>
 
     <!-- Google Font: Source Sans Pro -->
     <link href="{{asset('assets/css/fonts/source_sans_pro.css')}}" rel="stylesheet">
@@ -223,6 +221,8 @@
     <script src="{{asset('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('assets/js/adminlte.min.js')}}"></script>
+    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/css/dataTables.checkboxes.css" rel="stylesheet" />
+    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script>
     $(function() {

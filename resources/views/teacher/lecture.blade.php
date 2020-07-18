@@ -1,5 +1,27 @@
 @extends('teacher.include.app')
 @section('content')
+<!-- Extra File Include -->
+    
+  <!-- DrawingBoard CSS-->
+  <link rel="stylesheet" href="{{asset('assets/plugins/bower_components/drawingboard.js/dist/drawingboard.min.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/plugins/bower_components/drawingboard.js/dist/drawingboard.nocontrol.min.css')}}">
+  <!-- Drawing Board JS-->
+  <script src="{{asset('assets/plugins/bower_components/drawingboard.js/dist/drawingboard.min.js')}}"></script>
+  <script src="{{asset('assets/plugins/bower_components/drawingboard.js/dist/drawingboard.nocontrol.min.js')}}"></script>
+  
+  <style>
+	#zbeubeu {
+		width: 1330px;
+		height:435px;
+	}
+	#siteloader{
+		height:435px;
+	}
+	#myframein {
+    overflow:hidden;
+	}
+</style>
+<!-- ./Extra File Include -->
 
 <!-- Lecture-Main-Content -->
 <div class="content-wrapper">
@@ -27,7 +49,7 @@
       <!-- Lecture-On-Going-Lecture -->
       <div class="row">
         <div class="col-md-12">
-          <div class="card card-info ">
+          <div class="card card-info" id="myframeout">
             <div class="card-header border-transparent">
               <h3 class="card-title">On Going Lectures</h3>
               <div class="card-tools">
@@ -38,26 +60,50 @@
                 </button>
               </div>
             </div>
-            <div class="card-body p-0" style=" min-height:25rem; max-height:25rem; overflow:hidden">
+            <div class="card-body p-0">
               <div class="container-fluid">
                 <div class="row pt-2">
-                  <div class="col-md-8 col-sm-6">
+                  <div class="col-md-8">
                     <!--TODO: Try http://leimi.github.io/drawingboard.js/ Whiteboard here -->
-                    <div class="card ">
+                    <div class="card card-primary m-0 card-outline card-tabs"  id="myframein">
 
-                      <div class="card-body m-0 p-0" id="myFrame">
-                        <button type="button" onclick="myFunction()" class="btn position-static btn-tool btn-info d-inline text-primary " data-card-widget="maximize"><i class="fas fa-expand"></i>
-                        </button>
-                        <div id="siteloader" class="card-body p-0 w-100 embed-responsive embed-responsive-21by9">
-                        </div>
-                      </div>
+              <div class="card-header p-0 pt-1 border-bottom-0">
+                <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+				 <li class="nav-item">
+				  <a href="javascript:void(0)" class="nav-link " id="cardfs1"><i class="fas fa-expand"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="nav-link " style="display:none;" id="cardfs2"><i class="fas fa-compress"></i>
+                        </a>
+				  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="false">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="true">Drawing Board</a>
+                  </li>
+				  
+                </ul>
+				
+              </div>
+              <div class="card-body m-1 p-0">
+                <div class="tab-content" id="custom-tabs-three-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+                     <div id="siteloader" class="card-body p-0 w-100 embed-responsive embed-responsive-21by9">
+                        </div> 
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+                     <div id="zbeubeu"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
                     </div>
 
                   </div>
-                  <div class="col-md-4 col-sm-6">
+                  <div class="col-md-4 mt-2 mb-2">
 
-                    <button onclick="myFunction()" class="btn btn-block bg-gradient-info btn-xs mt-2  mb-2 mr-2">Start Live Lecture <i class="fas fa-arrow-circle-right ml-2"></i></button>
-                    <select class="custom-select select1 w-100 mt-2">
+                    <button onclick="myFunction()" class="btn w-100 bg-gradient-info btn-md mt-2  mb-2 mr-2">Start Live Lecture <i class="fas fa-arrow-circle-right ml-2"></i></button>
+                    <select class="w-100 select1 mt-2">
                       <option selected>Select The Topic</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
@@ -445,14 +491,66 @@
 
 <!-- Lecture-other-site-show-code -->
 
-<script>
-  function myFunction() {
-    document.getElementById("myFrame").width = "100% !important";
-  }
-</script>
+
 <script>
   $("#siteloader").html('<object data="http://cms.schooltimes.ca" />');
 </script>
 <!-- Lecture-other-site-show-code -->
-
+<script>
+	var myBoard = new DrawingBoard.Board('zbeubeu',{
+	controls: [
+		'Color',
+		{ Size: { type: 'dropdown' } },
+		{ DrawingMode: { filler: true} },
+		'Navigation'
+	],
+	controlsPosition:'top left',
+	size: 1,
+	webStorage: false,
+	droppable:true,
+	enlargeYourContainer: true,
+	stretchImg:true
+});
+$(document).ready(function () {
+		$(".drawing-board-controls").append('<div class="drawing-board-control"><i class="fas fa-expand" id="drawzoom"></i></div>');
+		var elem = document.getElementById("zbeubeu");
+    var elem1 = document.getElementById("myframein");
+		$('#drawzoom').on('click', function(){
+			elem.requestFullscreen();
+			var w = $(window).width();
+			var h = $(window).height();
+			$(".drawing-board-canvas").css("width", w + "px");
+			$(".drawing-board-canvas").attr("width", w );
+			$(".drawing-board-canvas").css("height", h + "px");
+			$(".drawing-board-canvas").attr("height", h );
+		})
+    $('#cardfs1').on('click', function(){
+      if(document.fullscreenElement||document.webkitFullscreenElement||document.mozFullScreenElement||document.msFullscreenElement) {
+        $("#siteloader").css("height", "435px");
+			document.exitFullscreen();
+		}
+      else{
+			elem1.requestFullscreen();
+			var w = $(window).width();
+			var h = 700;
+			$(".drawing-board-canvas").css("width", w + "px");
+			$(".drawing-board-canvas").attr("width", w );
+			$(".drawing-board-canvas").css("height", h + "px");
+			$(".drawing-board-canvas").attr("height", h );
+      $(".drawing-board-canvas-wrapper").css("width", w + "px");
+      $(".drawing-board-canvas-wrapper").css("height", h + "px");
+      $("#siteloader").css("height", h + "px");
+      }
+      
+      
+		});
+	
+		
+	});
+</script>
+<!--script>
+$("[data-card-widget='maximize']").click(function() {
+  document.getElementById("myFrameout").style.height = "35rem";
+});
+</!--script-->
 @endsection

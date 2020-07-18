@@ -1,13 +1,18 @@
 @extends('admin.include.app')
 @section('content')
+
+<!-- Extra File Include -->
+
 <style>
   .box {
-
     display: none;
   }
 </style>
 <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<!-- ./Extra File Include -->
+
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
@@ -39,6 +44,9 @@
             <div class="card-header border-transparent">
               <h3 class="card-title">Add Student</h3>
               <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                  <i class="fas fa-expand"></i>
+                </button>
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
                 </button>
@@ -47,9 +55,10 @@
             <!-- /.card-header -->
             <div class="card-body p-0">
               <div class="table-responsive mt-1 p-2">
-                <table id="example1" class="table table-bordered table-striped table-sm">
+                <table id="example1" class="table table-bordered table-striped table-sm" style="width:100%;">
                   <thead>
                     <tr>
+                      <th></th>
                       <th>Student Name</th>
                       <th>Student Email</th>
                       <th>Phone No.</th>
@@ -59,6 +68,7 @@
                   <tbody>
 
                     <tr>
+                      <td></td>
                       <td>Vaibhav Sharma</td>
                       <td>vaibhav@gmail.com</td>
                       <td>+91 7737737377</td>
@@ -72,6 +82,7 @@
                       </td>
                     </tr>
                     <tr>
+                      <td></td>
                       <td>Anuj Kumar</td>
                       <td>anuj@gmail.com</td>
                       <td>+91 7737737377</td>
@@ -95,10 +106,10 @@
             <div class="card-footer clearfix">
               <div class="row">
                 <div class="col-md-6">
-                  <a href="javascript:void(0)" class="btn btn-sm btn-secondary w-100" data-toggle="modal" data-target="#modal-add-edit-student"><i class="fas fa-plus-circle mr-3"></i>Add Student</a>
+                  <a href="javascript:void(0)" class="btn btn-sm btn-secondary w-100 m-1" data-toggle="modal" data-target="#modal-add-edit-student"><i class="fas fa-plus-circle mr-3"></i>Add Student</a>
                 </div>
                 <div class="col-md-6">
-                  <a href="javascript:void(0)" class="btn btn-sm btn-secondary w-100" data-toggle="modal" data-target="#modal-import-student"><i class="fas fa-file-import mr-3"></i>Import CSV</a>
+                  <a href="javascript:void(0)" class="btn btn-sm btn-secondary w-100 m-1" data-toggle="modal" data-target="#modal-import-student"><i class="fas fa-file-import mr-3"></i>Import CSV</a>
                 </div>
               </div>
             </div>
@@ -109,6 +120,9 @@
             <div class="card-header border-transparent">
               <h3 class="card-title">Approval Pending Student</h3>
               <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                  <i class="fas fa-expand"></i>
+                </button>
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
                 </button>
@@ -490,6 +504,8 @@
 </div>
 
 <!-- /.content-wrapper -->
+
+<!-- Student-FormValidation -->
 <script>
   $(document).ready(function() {
     $.validator.setDefaults({
@@ -554,12 +570,29 @@
     });
   });
 </script>
+<!-- ./Student-FormValidation -->
+
+<!-- Student-DataTable -->
 <script>
   $(function() {
-    $("#example1").DataTable({
-      "responsive": false,
+    var example1 = $("#example1").DataTable({
+      "responsive": true,
       "autoWidth": false,
+      //"scrollY":"270px",
       "ordering": true,
+      "columnDefs": [
+         {
+            'targets': 0,
+            "visible": false,
+            'checkboxes': {
+               'selectRow': false
+            }
+         }
+      ],
+      "select": {
+         'style': 'multi'
+      },
+      "order": [[1, 'asc']]
     });
     $("#example2").DataTable({
       "responsive": false,
@@ -570,8 +603,16 @@
         [3, 8, 10, 25, "All"]
       ]
     });
+    $("[data-card-widget='maximize']").click(function() {
+    var column = example1.column(0);
+    column.visible( ! column.visible() );
+    });
   });
+  
 </script>
+<!-- ./Student-DataTable -->
+
+<!-- Student-AddBatch -->
 <script>
   $(document).ready(function() {
     $("select").change(function() {
@@ -587,4 +628,5 @@
     }).change();
   });
 </script>
+<!-- ./Student-AddBatch -->
 @endsection

@@ -21,9 +21,10 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="{{asset('assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
-
+    
     <!-- Select2 -->
     <link rel="stylesheet" href="{{asset('assets/plugins/select2/css/select2.min.css')}}">
+
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('assets/css/adminlte.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/teacher.css')}}">
@@ -34,9 +35,7 @@
     <!-- jquery-validation -->
     <script src="{{asset('assets/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
     <script src="{{asset('assets/plugins/jquery-validation/additional-methods.min.js')}}"></script>
-    <script>
 
-    </script>
 
     <!-- Google Font: Source Sans Pro -->
     <link href="{{asset('assets/css/fonts/source_sans_pro.css')}}" rel="stylesheet">

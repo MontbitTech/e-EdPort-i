@@ -34,9 +34,7 @@
     <!-- jquery-validation -->
     <script src="{{asset('assets/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
     <script src="{{asset('assets/plugins/jquery-validation/additional-methods.min.js')}}"></script>
-    <script>
 
-    </script>
 
     <!-- Google Font: Source Sans Pro -->
     <link href="{{asset('assets/css/fonts/source_sans_pro.css')}}" rel="stylesheet">
