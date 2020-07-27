@@ -28,12 +28,15 @@ Route::get('admin/classroom', 'Admin\ClassroomController@index')->name('admin.cl
 // Teacher
 Route::get('admin/teacher', 'Admin\TeacherController@index')->name('admin.teacher');
 // Timetable
+Route::get('admin/timetable', 'Admin\TimetableController@index')->name('admin.timetable');
 // Student
 Route::get('admin/student', 'Admin\StudentController@index')->name('admin.student');
 // Content
+Route::get('admin/content', 'Admin\ContentController@index')->name('admin.content');
 // Support
 Route::get('admin/support', 'Admin\SupportController@index')->name('admin.support');
 // Setting
+Route::get('admin/setting', 'Admin\SettingController@index')->name('admin.setting');
 
 
 /*
@@ -51,9 +54,10 @@ Route::get('teacher/lecture', 'Teacher\LectureController@index')->name('teacher.
 // Examination
 Route::get('teacher/examination', 'Teacher\ExaminationController@index')->name('teacher.examination');
 // Setting
+Route::get('teacher/setting', 'Teacher\SettingController@index')->name('teacher.setting');
 // Register
 Route::get('teacher/register', 'Teacher\RegisterController@index')->name('teacher.register');
-// Register
+// Login
 Route::get('teacher/login', 'Teacher\LoginController@index')->name('teacher.login');
 
 /*
@@ -74,7 +78,8 @@ Route::get('student/examination', 'Student\ExaminationController@index')->name('
 Route::get('student/profile', 'Student\ProfileController@index')->name('student.profile');
 // Register
 Route::get('student/register', 'Student\RegisterController@index')->name('student.register');
-
+// Login
+Route::get('student/login', 'Student\LoginController@index')->name('student.login');
 
 
 /*
@@ -87,4 +92,17 @@ Route::get('student/register', 'Student\RegisterController@index')->name('studen
 */
 // Dashboard
 Route::get('principal/dashboard', 'Principal\DashboardController@index')->name('principal.dashboard');
+//Teacher
 Route::get('principal/teacher', 'Principal\TeacherController@index')->name('principal.teacher');
+//Setting
+Route::get('principal/setting', 'Principal\SettingController@index')->name('principal.setting');
+//Student
+Route::get('principal/student', 'Principal\StudentController@index')->name('principal.student');
+//Support
+Route::get('principal/support', 'Principal\SupportController@index')->name('principal.support');
+//TimeTable
+Route::get('principal/timetable', 'Principal\TimetableController@index')->name('principal.timetable');
+//Classroom
+Route::get('principal/classroom', 'Principal\ClassroomController@index')->name('principal.classroom');
+//Content
+Route::get('principal/content', 'Principal\ContentController@index')->name('principal.content');

@@ -1,8 +1,8 @@
 @extends('teacher.include.app')
 @section('content')
-
-<!-- Dashboard-Main-content -->
-
+<!-- Dashboard Extra Content -->
+<!-- ./Dashboard Extra Content -->
+<!-- Content Wrapper -->
 <div class="content-wrapper">
 
     <!-- Dashboard-Header-Content -->
@@ -224,9 +224,9 @@
                 <div class="col-md-6">
                     <!-- <div class="row"> -->
 
-                        <!-- Dashboard-Student-Count -->
+                    <!-- Dashboard-Student-Count -->
 
-                        <!-- <div class="col-lg-6 col-6">
+                    <!-- <div class="col-lg-6 col-6">
                             <div class="small-box bg-info ">
                                 <div class="inner">
                                     <h4>50</h4>
@@ -241,18 +241,18 @@
                             </div>
                         </div> -->
 
-                        <!-- ./Dashboard-Student-Count -->
+                    <!-- ./Dashboard-Student-Count -->
 
-                        <!-- Dashboard-Subject-Count -->
+                    <!-- Dashboard-Subject-Count -->
 
-                        <!-- -->
+                    <!-- -->
 
-                        <!-- ./Dashboard-Subject-Count -->
+                    <!-- ./Dashboard-Subject-Count -->
 
                     <!-- </div>
                     <div class="row"> -->
-                        <!-- Dashboard-Lecture-Count -->
-                        <!-- <div class="col-lg-6 col-6 ">
+                    <!-- Dashboard-Lecture-Count -->
+                    <!-- <div class="col-lg-6 col-6 ">
                             <div class="small-box bg-info ">
                                 <div class="inner">
                                     <h4>5</h4>
@@ -266,10 +266,10 @@
 
                             </div>
                         </div> -->
-                        <!-- ./Dashboard-Lecture-Count -->
+                    <!-- ./Dashboard-Lecture-Count -->
 
-                        <!-- Lecture-Lecture-Count -->
-                        <!-- <div class="col-lg-6 col-6">
+                    <!-- Lecture-Lecture-Count -->
+                    <!-- <div class="col-lg-6 col-6">
                             <div class="small-box bg-info ">
                                 <div class="inner">
                                     <h4>5</h4>
@@ -283,7 +283,7 @@
 
                             </div>
                         </div> -->
-                        <!-- ./Dashboard-Lecture-Count -->
+                    <!-- ./Dashboard-Lecture-Count -->
 
                     <!-- </div> -->
                     <!-- Dashboard-NoticeBoard -->
@@ -546,19 +546,26 @@
 
         </div>
     </section>
-
-    <!-- ./Dashboard-Body-Content -->
+    <!-- ./Section Content -->
+    <!-- All Modal Open-->
+    <!-- ./All Modal Close-->
 
 </div>
-<!-- ./Dashboard-Main-content  -->
+<!-- ./Content Wrapper  -->
+
+<!-- Dashboard Extra Content -->
 <script>
-        $(function() {
-            $("#example2").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-                "lengthMenu": [[3, 8, 10, 25, -1], [3, 8, 10, 25, "All"]]
-            });
+    $(function() {
+        $("#example2").DataTable({
+            "responsive": true,
+            "autoWidth": false,
+            "ordering": true,
+            "lengthMenu": [
+                [3, 8, 10, 25, -1],
+                [3, 8, 10, 25, "All"]
+            ]
         });
-  </script>
+    });
+</script>
+<!-- ./Dashboard Extra Content -->
 @endsection

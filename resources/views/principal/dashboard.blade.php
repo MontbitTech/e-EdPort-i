@@ -1,5 +1,7 @@
 @extends('principal.include.app')
 @section('content')
+<!-- Dashboard Extra Content -->
+<!-- ./Dashboard Extra Content -->
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
@@ -97,76 +99,7 @@
       </div>
       <!--/Row1-->
 
-      <!--Row2-->
-      <div class="row">
-
-          <!-- Dashboard-CPUTraffic -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">CPU Traffic</span>
-                <span class="info-box-number">
-                  10
-                  <small>%</small>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- ./Dashboard-CPUTraffic -->
-
-          <!-- Dashboard-MemoryUsage -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-sd-card"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Memory Usage</span>
-                <span class="info-box-number">
-                  10
-                  <small>%</small>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- /.Dashboard-MemoryUsage -->
-
-          <!-- fix for small devices only -->
-          <div class="clearfix hidden-md-up"></div>
-
-          <!-- Dashboard-DiskSpaceUsage -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-success elevation-1"><i class="far fa-database"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">DiskSpace Usage</span>
-                <span class="info-box-number">
-                  10
-                  <small>%</small>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- /.Dashboard-DiskSpaceUsage-->
-
-          <!-- Dashboard-ApacheMysql -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Apache & Mysql</span>
-                <span class="info-box-number">Running</span>
-              </div>
-            </div>
-          </div>
-          <!-- /.Dashboard-ApacheMysql -->
-
-        </div>
-      <!-- /.Row2 -->
-      <!-- Row3 -->
+      <!-- Row2 -->
       <div class="row">
 
         <!-- Dashboard-LineChart -->
@@ -468,148 +401,150 @@
         </div>
         <!-- ./Dashboard-table -->
       </div>
-      <!-- ./Row3 -->
-
-      <!--All Modal Open -->
-
-      <!-- Dashboard-HolidayModal -->
-      <div class="modal fade" id="modal-add-edit-holiday">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Add Holiday</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form role="form" enctype="multipart/form-data" method="post" action="">
-                <div class="card-body">
-
-                  <div class="form-group">
-                    <label for="holiday_name">Occassion</label>
-                    <input type="text" id="holiday_name" name="holiday_name" class="form-control" placeholder="Enter Occassion" />
-                  </div>
-                  <div class="form-group">
-                    <label for="holiday_from">From</label>
-                    <input type="date" id="holiday_from" name="holiday_from" class="form-control" />
-                  </div>
-                  <div class="form-group">
-                    <label for="holiday_to">To</label>
-                    <input type="date" id="holiday_to" name="holiday_to" class="form-control" />
-                  </div>
-                  <div class="form-group clearfix">
-                    <label for="holiday_from">For</label>
-                    <div class="row">
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess1" checked>
-                        <label for="checkboxSuccess1">
-                          Admin
-                        </label>
-                      </div>
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess2" checked>
-                        <label for="checkboxSuccess2">
-                          Principal
-                        </label>
-                      </div>
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess3" checked>
-                        <label for="checkboxSuccess3">
-                          Teacher
-                        </label>
-                      </div>
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess4" checked>
-                        <label for="checkboxSuccess4">
-                          Student
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- ./Dashboard-HolidayModal -->
-      
-      <!-- Dashboard-NoticeModal -->
-      <div class="modal fade" id="modal-add-edit-notice">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Add Notice</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form role="form" enctype="multipart/form-data" method="post" action="">
-                <div class="card-body">
-
-                  <div class="form-group">
-                    <label for="holiday_name">Notice</label>
-                    <textarea id="notice" name="notice" class="form-control" rows="5" placeholder="Enter Notice..."></textarea>
-                  </div>
-                  <div class="form-group clearfix">
-                    <label for="holiday_from">For</label>
-                    <div class="row">
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess8" checked>
-                        <label for="checkboxSuccess8">
-                          Admin
-                        </label>
-                      </div>
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess5" checked>
-                        <label for="checkboxSuccess5">
-                          Principal
-                        </label>
-                      </div>
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess6" checked>
-                        <label for="checkboxSuccess6">
-                          Teacher
-                        </label>
-                      </div>
-                      <div class="col-md-6 icheck-success d-inline">
-                        <input type="checkbox" id="checkboxSuccess7" checked>
-                        <label for="checkboxSuccess7">
-                          Student
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- ./Dashboard-NoticeModal-->
-
-      <!-- All Modal Close-->
+      <!-- ./Row2 -->
 
     </div>
   </section>
-  <!-- /.content -->
+  <!-- /.Section Content -->
+
+  <!--All Modal Open -->
+
+  <!-- Dashboard-HolidayModal -->
+  <div class="modal fade" id="modal-add-edit-holiday">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Holiday</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form role="form" enctype="multipart/form-data" method="post" action="">
+            <div class="card-body">
+
+              <div class="form-group">
+                <label for="holiday_name">Occassion</label>
+                <input type="text" id="holiday_name" name="holiday_name" class="form-control" placeholder="Enter Occassion" />
+              </div>
+              <div class="form-group">
+                <label for="holiday_from">From</label>
+                <input type="date" id="holiday_from" name="holiday_from" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="holiday_to">To</label>
+                <input type="date" id="holiday_to" name="holiday_to" class="form-control" />
+              </div>
+              <div class="form-group clearfix">
+                <label for="holiday_from">For</label>
+                <div class="row">
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess1" checked>
+                    <label for="checkboxSuccess1">
+                      Admin
+                    </label>
+                  </div>
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess2" checked>
+                    <label for="checkboxSuccess2">
+                      Principal
+                    </label>
+                  </div>
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess3" checked>
+                    <label for="checkboxSuccess3">
+                      Teacher
+                    </label>
+                  </div>
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess4" checked>
+                    <label for="checkboxSuccess4">
+                      Student
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ./Dashboard-HolidayModal -->
+
+  <!-- Dashboard-NoticeModal -->
+  <div class="modal fade" id="modal-add-edit-notice">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Notice</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form role="form" enctype="multipart/form-data" method="post" action="">
+            <div class="card-body">
+
+              <div class="form-group">
+                <label for="holiday_name">Notice</label>
+                <textarea id="notice" name="notice" class="form-control" rows="5" placeholder="Enter Notice..."></textarea>
+              </div>
+              <div class="form-group clearfix">
+                <label for="holiday_from">For</label>
+                <div class="row">
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess8" checked>
+                    <label for="checkboxSuccess8">
+                      Admin
+                    </label>
+                  </div>
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess5" checked>
+                    <label for="checkboxSuccess5">
+                      Principal
+                    </label>
+                  </div>
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess6" checked>
+                    <label for="checkboxSuccess6">
+                      Teacher
+                    </label>
+                  </div>
+                  <div class="col-md-6 icheck-success d-inline">
+                    <input type="checkbox" id="checkboxSuccess7" checked>
+                    <label for="checkboxSuccess7">
+                      Student
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ./Dashboard-NoticeModal-->
+
+  <!-- All Modal Close-->
 </div>
 
-<!-- /.content-wrapper -->
+<!-- /.Content Wrapper -->
+
+<!-- Dashboard Extra Content -->
 <script>
   $(function() {
     /* Chart.js Charts */
@@ -733,18 +668,22 @@
   })
 </script>
 <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-            });
-            $("#example2").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-                "ordering": true,
-                "lengthMenu": [[3, 8, 15, 25, -1], [3, 8, 15, 25, "All"]]
-            });
-        });
+  $(function() {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+      "ordering": true,
+    });
+    $("#example2").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+      "ordering": true,
+      "lengthMenu": [
+        [3, 8, 15, 25, -1],
+        [3, 8, 15, 25, "All"]
+      ]
+    });
+  });
 </script>
+<!-- ./Dashboard Extra Content -->
 @endsection

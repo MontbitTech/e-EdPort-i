@@ -4,15 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="teacher-register-box pt-2">
-            
+
 
             <div class="card card-secondary">
                 <div class="card-header border-transparent">
                     <div class="register-logo">
-                <a href="">
-                    <img src="{{asset('assets/img/logo.png')}}" width="40" alt="[school_name_logo]" class="brand-image ">
-                    <b>Delhi Public School</b>
-                </a>
+                        <a href="">
+                            <img src="{{asset('assets/img/logo.png')}}" width="40" alt="[school_name_logo]" class="brand-image ">
+                            <b>Delhi Public School</b>
+                        </a>
                     </div>
                 </div>
                 <div class="card-body register-card-body">
@@ -95,9 +95,9 @@
                             <div class="row">
                                 <div class="col-md-6 ">
                                     <div class="form-group">
-                                        <label for="select_class" >Class </label>
+                                        <label for="select_class">Class </label>
 
-                                        <select data-placeholder="Select Class" class="form-control select1" id="select_class" name="select_class" >
+                                        <select data-placeholder="Select Class" class="form-control select1" id="select_class" name="select_class">
                                             <option>Select Class </option>
                                             <option>I</option>
                                             <option>II </option>
@@ -187,7 +187,7 @@
                     </form>
                 </div>
                 <div class="col-12 mt-2">
-                    <button type="submit" class="btn btn-info btn-lg m-auto btn-block" style="width:100px">Send</button>
+                    <button type="submit" class="btn btn-info btn-lg m-auto btn-block" style="width:100px">Submit</button>
                 </div>
                 <a href="login.html" class="text-center">I already have a membership</a>
             </div>

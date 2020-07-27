@@ -1,5 +1,6 @@
 @extends('teacher.include.app')
 @section('content')
+<!-- Examination Extra Content -->
 <style>
     .box {
 
@@ -10,7 +11,8 @@
         display: none;
     }
 </style>
-<!-- Examination-Main-content -->
+<!-- ./Examination Extra Content -->
+<!-- Content Wrapper -->
 
 <div class="content-wrapper">
 
@@ -34,7 +36,7 @@
 
     <!-- ./Examination-Header-Content -->
 
-    <!-- Examination-Body-Content -->
+    <!-- Section Content -->
 
     <section class="content">
         <div class="container-fluid">
@@ -45,7 +47,7 @@
                 <div class="col-md-8">
                     <div class="card card-info collapsed-card">
                         <div class="card-header border-transparent">
-                            <h3 class="card-title">Add Exam</h3>
+                            <h3 class="card-title">Create Question Paper</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                     <i class="fas fa-plus"></i>
@@ -57,7 +59,7 @@
                         <div class="card-body">
                             <form role="form">
                                 <div class="form-group">
-                                    <label for="exampleInputQuestion" class="mb-0">Enter Examination Name</label>
+                                    <label for="exampleInputQuestion" class="mb-0">Enter Paper Name</label>
                                     <input type="text" class="form-control input-xs" id="exampleInputQuestion" placeholder="Exam name">
                                 </div>
                                 <hr>
@@ -126,7 +128,7 @@
                                 </table>
                                 <div class="newquestion"></div>
 
-                                <a class="btn btn-info addquestion w-100 mb-1"><i class="fas fa-plus text-white"></i></a>
+                                <button class="btn btn-info addquestion w-100 mb-1"><i class="fas fa-plus mr-3"></i>Add More Question</button>
 
 
                                 <button type="submit" class="btn btn-primary w-100">Submit</button>
@@ -140,7 +142,7 @@
                     <!-- Examination-Exam-Form-Edit -->
                     <div class="card card-info collapsed-card">
                         <div class="card-header border-transparent">
-                            <h3 class="card-title">Edit Exam</h3>
+                            <h3 class="card-title">Modifying My Existing Question Paper</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                     <i class="fas fa-plus"></i>
@@ -151,7 +153,7 @@
 
                         <div class="card-body">
                             <select class="form-control select2">
-                                <option value="">Select Examination Name</option>
+                                <option value="">Select Question Paper</option>
                                 <option value="12th">12th Board Exam</option>
                                 <option value="10th">10th Board Exam</option>
                                 <option value="8th">8th Board Exam</option>
@@ -159,7 +161,7 @@
                             <div class="12th exam mt-3">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label for="exampleInputQuestion" class="mb-0">Examination Name</label>
+                                        <label for="exampleInputQuestion" class="mb-0">Question Paper Name</label>
                                         <input type="text" class="form-control input-xs" id="exampleInputQuestion" value="Company " placeholder="Exam name">
                                     </div>
                                     <hr>
@@ -228,7 +230,7 @@
                                     </table>
                                     <div class="newquestion"></div>
 
-                                    <a class="btn btn-info addquestion w-100 mb-1"><i class="fas fa-plus text-white"></i></a>
+                                    <button class="btn btn-info addquestion w-100 mb-1"><i class="fas fa-plus mr-3"></i>Add More Question</button>
 
 
                                     <button type="submit" class="btn btn-primary w-100">Submit</button>
@@ -247,7 +249,7 @@
                 <div class="col-md-4">
                     <div class="card card-info collapsed-card">
                         <div class="card-header border-transparent">
-                            <h3 class="card-title">Examination</h3>
+                            <h3 class="card-title">Assign Question Paper</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                     <i class="fas fa-plus"></i>
@@ -258,10 +260,10 @@
 
                         <div class="card-body pt-2 pb-0">
                             <div class="col-md-12 mt-1">
-                                <label class="d-block mb-2">Examination</label>
-                                <select data-placeholder="Examination" class="form-control select2" style="width: 100%;">
+                                <label class="d-block mb-2">Question Paper</label>
+                                <select data-placeholder="Question Paper" class="form-control select2" style="width: 100%;">
 
-                                    <option value="">Examination</option>
+                                    <option value="">Question Paper</option>
                                     <option value="Summer">Summer</option>
                                     <option value="Winter">Winter</option>
                                     <option value="Unit">Unit</option>
@@ -324,9 +326,13 @@
 
 
     </section>
-
-    <!-- ./Examination-Body-Content -->
+    <!-- ./Section Content -->
+    <!-- All Modal Open-->
+    <!-- ./All Modal Close-->
 </div>
+<!-- ./Content Wrapper  -->
+
+<!-- Examination Extra Content -->
 <script>
     $(document).ready(function() {
         $("select").change(function() {
@@ -454,5 +460,5 @@
         $select2.html($options.filter('[value="' + this.value + '"]'));
     }).trigger('change');
 </script> -->
-<!-- Examination-Main-content -->
+<!-- Examination Extra Content -->
 @endsection

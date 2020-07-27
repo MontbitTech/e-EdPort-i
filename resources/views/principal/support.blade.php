@@ -1,4 +1,4 @@
-@extends('admin.include.app')
+@extends('principal.include.app')
 @section('content')
 <!-- Support-Extra Content -->
 <style>
@@ -22,7 +22,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="{{route('admin.support')}}">Admin</a></li>
+            <li class="breadcrumb-item"><a href="{{route('principal.support')}}">Principal</a></li>
             <li class="breadcrumb-item active">Support</li>
           </ol>
         </div>
