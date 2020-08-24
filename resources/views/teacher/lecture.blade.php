@@ -530,7 +530,7 @@
     <button id="next` + (nbrLiElem + 1) + `">Next</button>&nbsp; &nbsp;<span>Page: <span id="page_num` + (nbrLiElem + 1) + `"></span> / <span id="page_count` + (nbrLiElem + 1) + `"></span></span>
     </div><div style="overflow:auto;height:550px;"><canvas id="the-canvas` + (nbrLiElem + 1) + `"></canvas></div></div></div>`);
 
-      var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
+      var url = 'https://drive.google.com/file/d/1HgfdCVXK8b5DwwuTV4AFi3DXAajdOfk2/preview';
       var pdfjsLib = window['pdfjs-dist/build/pdf'];
       pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
       var pdfDoc = null,
