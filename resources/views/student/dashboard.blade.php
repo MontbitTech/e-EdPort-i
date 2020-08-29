@@ -1,8 +1,11 @@
 @extends('student.include.app')
 @section('content')
-<!-- Content Wrapper. Contains page content -->
+<!-- Setting Extra Content -->
+
+<!-- ./Setting Extra Content -->
+<!-- Content Wrapper -->
 <div class="content-wrapper">
-  <!-- Main content -->
+  <!-- Dashboard-HeaderContent -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
@@ -18,6 +21,9 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
+  <!-- Dashboard-HeaderContent -->
+
+  <!-- Section Content -->
   <section class="content">
     <div class="container-fluid">
       <div class="row  ">
@@ -503,7 +509,14 @@
       </div>
     </div>
   </section>
+  <!-- /.Section Content -->
+
+  <!-- All Modal Open --->
+  <!-- ./All Modal Close -->
 </div>
+<!-- ./Content Wrapper -->
+
+<!-- Dashboard Extra Content -->
 <script>
   $(function() {
     $("#example2").DataTable({
@@ -517,4 +530,5 @@
     });
   });
 </script>
+<!-- ./Dashboard Extra Content -->
 @endsection

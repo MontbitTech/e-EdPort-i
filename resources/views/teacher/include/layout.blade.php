@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="{{asset('assets/plugins/ionicons-2.0.1/css/ionicons.min.css')}}">
   <!-- icheck bootstrap -->
   <link rel="stylesheet" href="{{asset('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="{{asset('assets/plugins/select2/css/select2.min.css')}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('assets/css/adminlte.css')}}">
   <!-- Google Font: Source Sans Pro -->
@@ -21,7 +23,7 @@
 
 <body class="hold-transition login-page">
 
-@yield('content')
+  @yield('content')
 
   <!-- jQuery -->
   <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
@@ -31,12 +33,18 @@
   <script src="{{asset('assets/js/adminlte.min.js')}}"></script>
   <!-- bs-custom-file-input -->
   <script src="{{asset('assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+  <!-- Select2 -->
+  <script src="{{asset('assets/plugins/select2/js/select2.full.min.js')}}"></script>
   <script type="text/javascript">
-  $(document).ready(function () {
-  bsCustomFileInput.init();
-  });
+    $(document).ready(function() {
+      bsCustomFileInput.init();
+    });
   </script>
-  
+  <script>
+    $(function() {
+      $('.select1').select2()
+    });
+  </script>
 </body>
 
 </html>

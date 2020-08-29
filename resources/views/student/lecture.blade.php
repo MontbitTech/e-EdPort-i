@@ -1,9 +1,12 @@
 @extends('student.include.app')
 @section('content')
+<!-- Lecture Extra Content -->
 
+<!-- ./Lecture Extra Content -->
+<!-- Content Wrapper -->
 <div class="content-wrapper">
-  <!-- Content Header (Page header) -->
-  <section class="content-header">
+  <!-- Lecture-Header-Content -->
+  <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
@@ -16,10 +19,11 @@
           </ol>
         </div>
       </div>
-    </div><!-- /.container-fluid -->
-  </section>
+    </div>
+  </div>
+  <!-- ./Lecture-Header-Content -->
 
-  <!-- Main content -->
+  <!-- Section content -->
   <section class="content">
     <div class="container-fluid">
       <div class="row">
@@ -58,7 +62,7 @@
                         </span>
                       </td>
                       <td class="text-right">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#notes">
                           <span>
                             <i class="fas fa-sticky-note text-info fa-lg icon-3x "></i>
 
@@ -388,14 +392,32 @@
         </div>
       </div>
     </div>
-
-
-    <!-- /.container-fluid -->
-    <!-- /.modal -->
   </section>
-  <!-- /.content -->
+  <!-- /.Section Content -->
+  <!-- All Modal Open-->
+  <!-- Student-LectureNotes -->
+  <div class="modal fade" id="notes">
+    <div class="modal-dialog modal-xl" style="width:100%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">View Notes</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe src='http://www.africau.edu/images/default/sample.pdf' height="500px" width="100%" frameborder='0'></iframe>
+        </div>
 
+      </div>
+    </div>
+  </div>
+  <!-- ./Student-LectureNotes-->
+  <!-- All Modal Close-->
 
 </div>
+<!-- ./Content Wrapper -->
 
+<!-- Lecture Extra Content -->
+<!-- ./Lecture Extra Content -->
 @endsection

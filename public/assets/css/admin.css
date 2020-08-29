@@ -8,8 +8,13 @@
   color:#6c757d;
   font-size: 2.3rem; 
 }
-@media only screen and (max-width: 300px) {
+
+.modal{
+  z-index: 10000;
+}
+@media only screen and (max-width: 360px) {
 .dashhead{
   font-size: 1.1rem; 
 }
+
 }

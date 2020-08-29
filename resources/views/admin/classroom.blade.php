@@ -1,10 +1,13 @@
 @extends('admin.include.app')
 @section('content')
+<!-- Classroom Extra Content -->
 <style>
   div#example2_filter.dataTables_filter input {
     width: 70%;
   }
 </style>
+<!-- ./Classroom Extra Content -->
+
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
@@ -48,7 +51,7 @@
                   <thead>
                     <tr>
                       <th>Class Name</th>
-                      <th>Batch</th>
+                      <th>Section</th>
                       <th>Subjects</th>
                       <th>Action</th>
                     </tr>
@@ -105,7 +108,6 @@
                 </button>
               </div>
             </div>
-            <!-- /.card-header -->
             <div class="card-body p-0">
               <div class="table-responsive mt-1 p-2">
                 <table id="example2" class="table table-bordered table-striped table-sm">
@@ -140,106 +142,101 @@
                   </tbody>
                 </table>
               </div>
-              <!-- /.table-responsive -->
             </div>
-            <!-- /.card-body -->
             <div class="card-footer clearfix">
               <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#modal-add-edit-subject" style="width:100%;">Add Subject</a>
             </div>
-            <!-- /.card-footer -->
           </div>
 
         </div>
         <!-- /.Classroom-SubjectTable -->
       </div>
-      <!-- /.row -->
-
-      <!-- All Modal Open-->
-      <!-- Dashboard-ClassModal -->
-      <div class="modal fade" id="modal-add-edit-class">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Add Classroom</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form role="form" enctype="multipart/form-data" id="addclassroomi" method="post" action="">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="select_teacher">Class Name</label>
-                    <input type="text" id="add_class" name="add_class" class="form-control" placeholder="Enter Class Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="select_batch">Batch</label>
-                    <select multiple="multiple" data-placeholder="Select a Batch" class="form-control select2" id="select_batch" name="select_batch" style="width: 100%;">
-                      <option value="Evening">Evening</option>
-                      <option value="Morning">Morning</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="select_subject">Select Subject</label>
-                    <select multiple="multiple" data-placeholder="Select a Subject" class="form-control select2" id="select_subject" name="select_subject" style="width: 100%;">
-                      <option value="Math">Math</option>
-                      <option value="Science">Science</option>
-                    </select>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- ./Dashboard-ClassModal-->
-
-      <!-- Dashboard-SubjectModal -->
-      <div class="modal fade" id="modal-add-edit-subject">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Add Subject</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form role="form" enctype="multipart/form-data" id="addsubjecti" method="post" action="">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="add_subject">Subject Name</label>
-                    <input type="text" id="add_subject" name="add_subject" class="form-control" placeholder="Enter Subject Name">
-                  </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- ./Dashboard-SubjectModal-->
-
-      <!-- All Modal Close-->
     </div>
   </section>
-  <!-- /.content -->
-</div>
+  <!-- ./Section Content -->
 
-<!-- /.content-wrapper -->
+  <!-- All Modal Open-->
+  <!-- Dashboard-ClassModal -->
+  <div class="modal fade" id="modal-add-edit-class">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Classroom</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form role="form" enctype="multipart/form-data" id="addclassroomi" method="post" action="">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="select_teacher">Class Name</label>
+                <input type="text" id="add_class" name="add_class" class="form-control" placeholder="Enter Class Name">
+              </div>
+              <div class="form-group">
+                <label for="select_section">Section</label>
+                <select multiple="multiple" data-placeholder="Select a Section" class="form-control " id="select_section" name="select_section" style="width: 100%;">
+                  <option value="Evening">Evening</option>
+                  <option value="Morning">Morning</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="select_subject">Select Subject</label>
+                <select multiple="multiple" data-placeholder="Select a Subject" class="form-control " id="select_subject" name="select_subject" style="width: 100%;">
+                  <option value="Math">Math</option>
+                  <option value="Science">Science</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ./Dashboard-ClassModal-->
+
+  <!-- Dashboard-SubjectModal -->
+  <div class="modal fade" id="modal-add-edit-subject">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Subject</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form role="form" enctype="multipart/form-data" id="addsubjecti" method="post" action="">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="add_subject">Subject Name</label>
+                <input type="text" id="add_subject" name="add_subject" class="form-control" placeholder="Enter Subject Name">
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ./Dashboard-SubjectModal-->
+
+  <!-- All Modal Close-->
+</div>
+<!-- ./Content Wrapper -->
+
+<!-- Classroom Extra Content -->
 <script>
   $(document).ready(function() {
     $.validator.setDefaults({
@@ -252,7 +249,7 @@
         select_teacher: {
           required: true
         },
-        select_batch: {
+        select_section: {
           required: true
         },
         select_subject: {
@@ -263,8 +260,8 @@
         select_teacher: {
           required: "Please Select Teacher"
         },
-        select_batch: {
-          required: "Please Select Batch"
+        select_section: {
+          required: "Please Select Section"
         },
         select_subject: "Please Select Subject"
       },
@@ -321,4 +318,5 @@
     });
   });
 </script>
+<!-- ./Classroom Extra Content -->
 @endsection

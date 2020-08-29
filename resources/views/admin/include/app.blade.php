@@ -34,9 +34,7 @@
     <!-- jquery-validation -->
     <script src="{{asset('assets/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
     <script src="{{asset('assets/plugins/jquery-validation/additional-methods.min.js')}}"></script>
-    <script>
 
-    </script>
 
     <!-- Google Font: Source Sans Pro -->
     <link href="{{asset('assets/css/fonts/source_sans_pro.css')}}" rel="stylesheet">
@@ -56,34 +54,7 @@
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i>
-                        <span class="badge badge-warning navbar-badge">15</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">15 Notifications</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
-                            <span class="float-right text-muted text-sm">3 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
-                            <span class="float-right text-muted text-sm">12 hours</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 new reports
-                            <span class="float-right text-muted text-sm">2 days</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                    </div>
-                </li>
-                <!-- Notifications Dropdown Menu -->
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-user-circle" style="font-size:x-large;"></i>
@@ -151,7 +122,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="{{route('admin.timetable')}}" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-week"></i>
                                 <p>
                                     Timetable
@@ -167,7 +138,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{route('admin.content')}}" class="nav-link">
                                 <i class="nav-icon fas fa-book-open"></i>
                                 <p>
                                     Content
@@ -175,7 +146,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{route('admin.support')}}" class="nav-link">
                                 <i class="nav-icon fas fa-question-circle"></i>
                                 <p>
                                     Support
@@ -183,7 +154,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{route('admin.setting')}}" class="nav-link">
                                 <i class="nav-icon fas fa-cogs"></i>
                                 <p>
                                     Setting
@@ -223,6 +194,8 @@
     <script src="{{asset('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('assets/js/adminlte.min.js')}}"></script>
+    <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/css/dataTables.checkboxes.css" rel="stylesheet" />
+    <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script>
     $(function() {

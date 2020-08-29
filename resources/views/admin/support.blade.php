@@ -1,5 +1,6 @@
 @extends('admin.include.app')
 @section('content')
+<!-- Support-Extra Content -->
 <style>
   .btn:not(:disabled):not(.disabled).active {
     background-color: #007bff;
@@ -7,10 +8,12 @@
 </style>
 <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<!-- ./Support-Extra Content -->
+
 <!-- Content Wrapper -->
 <div class="content-wrapper">
 
-  <!-- Student-HeaderContent -->
+  <!-- Support-HeaderContent -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
@@ -26,7 +29,7 @@
       </div>
     </div>
   </div>
-  <!-- /.Student-HeaderContent -->
+  <!-- /.Support-HeaderContent -->
 
   <!-- Section Content -->
   <section class="content">
@@ -52,6 +55,7 @@
                     <tr>
                       <th>Issues</th>
                       <th>Status</th>
+                      <th>Escalate</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -61,7 +65,7 @@
                         <div class="post">
                           <div class="user-block">
                             <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
-                            <a href="javascript:void(0)" class="btn float-right btn-xs btn-secondary"><i class="fas fa-redo mr-1"></i>Escalate</a>
+
                             <span class="username">
                               <a href="#">Jonathan Burke Jr.</a>
                               <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
@@ -93,18 +97,21 @@
                           </label>
                         </div>
                       </td>
+                      <td>
+                        <a href="javascript:void(0)" class="btn"><i class="fas fa-location-arrow"></i></a>
+                      </td>
                     </tr>
                     <tr>
                       <td>
                         <div class="post">
                           <div class="user-block">
                             <img class="img-circle img-bordered-sm" src="{{asset('assets/img/admin.png')}}" alt="user image">
-                            <a href="javascript:void(0)" class="btn float-right btn-xs btn-secondary"><i class="fas fa-redo mr-1"></i>Escalate</a>
+                            <!--a href="javascript:void(0)" class="btn float-right btn-xs btn-secondary"><i class="fas fa-redo mr-1"></i>Escalate</!--a-->
                             <span class="username">
                               <a href="#">Sanju Burke Jr.</a>
                             </span>
                             <span class="description">6th November 2020 - 9:30 PM</span>
-                            
+
                           </div>
                           <!-- /.user-block -->
                           <p style="font-size: smaller;">
@@ -131,17 +138,18 @@
                           </label>
                         </div>
                         <div>
-                        
+
                         </div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0)" class="btn"><i class="fas fa-location-arrow"></i></a>
                       </td>
                     </tr>
 
                   </tbody>
                 </table>
               </div>
-              <!-- /.table-responsive -->
             </div>
-            <!-- /.card-body -->
           </div>
           <!--./ Open-Service-Request-->
 
@@ -155,7 +163,6 @@
                 </button>
               </div>
             </div>
-            <!-- /.card-header -->
             <div class="card-body p-0">
               <div class="table-responsive mt-1 p-2">
                 <table id="example2" class="table table-sm">
@@ -177,7 +184,6 @@
                             </span>
                             <span class="description">7th November 2020 - 8:30 AM</span>
                           </div>
-                          <!-- /.user-block -->
                           <p style="font-size: smaller;">
                             Lorem ipsum represents a long-held tradition for designers,
                             typographers and the like.
@@ -210,7 +216,6 @@
                             </span>
                             <span class="description">6th November 2020 - 9:30 PM</span>
                           </div>
-                          <!-- /.user-block -->
                           <p style="font-size: smaller;">
                             ABCD ipsum represents a long-held tradition for designers,
                             typographers and the like.
@@ -237,9 +242,7 @@
                   </tbody>
                 </table>
               </div>
-              <!-- /.table-responsive -->
             </div>
-            <!-- /.card-body -->
           </div>
           <!--./ Open-Service-Request-->
         </div>
@@ -248,17 +251,17 @@
 
       </div>
       <!-- /.row -->
-
-      <!-- All Modal Open-->
-
-      <!-- All Modal Close-->
     </div>
   </section>
-  <!-- /.content -->
+  <!-- ./Section Content -->
+  <!-- All Modal Open-->
+
+  <!-- All Modal Close-->
 </div>
 
-<!-- /.content-wrapper -->
+<!-- /.Content Wrapper -->
 
+<!-- Support-Extra Content -->
 <script>
   $(function() {
     $("#example1").DataTable({
@@ -282,24 +285,26 @@
   });
 </script>
 <script>
-$('body').on('click', '.support-status', function(event) {
+  $('body').on('click', '.support-status', function(event) {
     var sr_id = $(this).attr('data-id');
 
-    if (sr_id) { Swal.fire({
-  title: 'Enter your comment',
-  input: 'textarea',
-  inputPlaceholder: 'Type your Comment here...',
-  inputAttributes: {
-    'aria-label': 'Type your Comment here'
-  },
-  showCancelButton: true
-})
-  .then((result) => {
-  if (result.value) {
-	  Swal.fire(result.value)
-       }
-      })
+    if (sr_id) {
+      Swal.fire({
+          title: 'Enter your comment',
+          input: 'textarea',
+          inputPlaceholder: 'Type your Comment here...',
+          inputAttributes: {
+            'aria-label': 'Type your Comment here'
+          },
+          showCancelButton: true
+        })
+        .then((result) => {
+          if (result.value) {
+            Swal.fire(result.value)
+          }
+        })
     }
-});
+  });
 </script>
+<!-- ./Support-Extra Content -->
 @endsection

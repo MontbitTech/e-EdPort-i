@@ -1,5 +1,6 @@
 @extends('student.include.app')
 @section('content')
+<!-- Examination Extra Content -->
 <style>
     .subj {
 
@@ -10,7 +11,8 @@
         display: none;
     }
 </style>
-<!-- Examination-Main-content -->
+<!-- ./Examination Extra Content -->
+<!-- Content Wrapper -->
 
 <div class="content-wrapper">
 
@@ -34,8 +36,7 @@
 
     <!-- ./Examination-Header-Content -->
 
-    <!-- Examination-Body-Content -->
-
+    <!-- Section-Content -->
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -141,56 +142,11 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="small-box bg-info ">
-                                <div class="inner">
-                                    <h4>50</h4>
-                                    <p> My Pending Exam</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-clipboard-list"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="small-box bg-info ">
-                                <div class="inner">
-                                    <h4>5</h4>
-                                    <p> My Today Exam</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-clipboard-list"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="small-box bg-info ">
-                                <div class="inner">
-                                    <h4>5</h4>
-                                    <p> My Upcoming Exam</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-clipboard-list"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="small-box bg-info ">
-                                <div class="inner">
-                                    <h4>10</h4>
-                                    <p> My Attend Exam</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-trophy "></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- Profile-Performance card -->
                     <div class="card card-info collapsed-card">
                         <div class="card-header border-transparent">
-                            <h3 class="card-title"><i class="fas fa-award"></i> Performance Card</h3>
+                            <h3 class="card-title"><i class="fas fa-award mr-2"></i> Performance Card</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                     <i class="fas fa-plus"></i>
@@ -263,16 +219,15 @@
 
                     </div>
                     <!-- /.Profile-Performance card -->
-
-
-
                 </div>
-
-
     </section>
-
-    <!-- ./Examination-Body-Content -->
+    <!-- ./Section-Content -->
+    <!-- All Modal Open --->
+    <!-- ./All Modal Close -->
 </div>
+<!-- ./Content Wrapper -->
+
+<!-- Examination Extra Content -->
 <script>
     $(document).ready(function() {
         $("select").change(function() {
@@ -297,6 +252,5 @@
         });
     });
 </script>
-
-<!--./Examination - Main - content-->
+<!-- ./Examination Extra Content -->
 @endsection
